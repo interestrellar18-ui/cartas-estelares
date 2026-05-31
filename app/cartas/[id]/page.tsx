@@ -41,10 +41,10 @@ export default function CartaIndividual() {
       arquivoMusica: "/interestelar.mp3",
 
       texto:
-        "Eu caminho em ruas frias\nSem saber pra onde vou\nCarregando no silêncio\nTudo aquilo que ficou.\n\nTeu sorriso é um planeta\nOnde eu quero morar.",
+        "Eu caminho em ruas frias\nSem saber pra onde vou\nCarregando no silêncio\nTudo aquilo que ficou\n\nTeu sorriso é um planeta\nOnde eu quero morar\nTenho medo de ser um meteorito\nSó sabendo machucar\n\nToda palavra mal dita\nFoi eclipse entre nós dois\nUm instante destruindo\nO que nasceu muito antes, depois\n\nEu tentei fingir coragem\nMas desabei sem você\nPorque até quem gosta muito\nTambém pode se perder\n\nNão prometo céu eterno\nNem um mundo sem temor\nSó prometo ser abrigo\nQuando a vida te trouxer dor\n\nPrometo noites mais calmas\nMenos guerra, mais calor\nMais verdades no meu peito\nE mais cuidado no amor\n\nSe ainda existir no espaço\nO que um dia foi nós dois\nMe deixa pousar de novo\nNo teu peito outra vez, depois\n\nPorque desde que te magoei\nTudo em mim escureceu\nFeito estrela solitária\nque em um universo se perdeu .",
 
       frase:
-        "No meio de tantas estrelas, você brilhou exatamente na direção do meu peito.",
+        " Eu olho para você Felipe, Eu olho tanto para você que, as vezes, deveria ser mais discreta. Ou olhar menos. Porque adoro o que vejo e nem acredito que, no meio de tantas estrelas, você brilhou para mim. ",
 
       // SELOS ✨
       selo1: "",
