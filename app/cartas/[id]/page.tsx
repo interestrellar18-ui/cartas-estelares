@@ -17,6 +17,11 @@ export default function CartaIndividual() {
   useEffect(() => {
     seloSound.current = new Audio("/estrela.mp3");
     seloSound.current.volume = 0.4;
+
+    // PARAR MÚSICA AO SAIR DA PÁGINA
+    return () => {
+      musicaPlayer.current?.pause();
+    };
   }, []);
 
   const tocarSom = () => {
@@ -30,27 +35,25 @@ export default function CartaIndividual() {
   // CARTAS ✨
   const cartas = [
     {
-      titulo: "Supernova",
+      titulo: "Estrelas para Você",
       destinatario: "Felipe",
 
       // MÚSICA ✨
-      musica: "Iterestelar",
+      musica: "Interestelar",
       artista: "Mulamba",
 
       // ARQUIVO DA MÚSICA 🎵
       arquivoMusica: "/interestelar.mp3",
 
       texto:
-        "Eu caminho em ruas frias\nSem saber pra onde vou\nCarregando no silêncio\nTudo aquilo que ficou\n\nTeu sorriso é um planeta\nOnde eu quero morar\nTenho medo de ser um meteorito\nSó sabendo machucar\n\nToda palavra mal dita\nFoi eclipse entre nós dois\nUm instante destruindo\nO que nasceu muito antes, depois\n\nEu tentei fingir coragem\nMas desabei sem você\nPorque até quem gosta muito\nTambém pode se perder\n\nNão prometo céu eterno\nNem um mundo sem temor\nSó prometo ser abrigo\nQuando a vida te trouxer dor\n\nPrometo noites mais calmas\nMenos guerra, mais calor\nMais verdades no meu peito\nE mais cuidado no amor\n\nSe ainda existir no espaço\nO que um dia foi nós dois\nMe deixa pousar de novo\nNo teu peito outra vez, depois\n\nPorque desde que te magoei\nTudo em mim escureceu\nFeito estrela solitária\nque em um universo se perdeu .",
+        "Eu sei que existiram histórias antes de mim.\nHistórias longas, intensas, daquelas que mudam o jeito de alguém enxergar o amor.\nE às vezes eu penso no peso disso tudo.\n\nPenso em como deve ser difícil chegar depois de dez anos.\nDepois de alguém que te atravessou tão fundo que até hoje mora em partes suas que talvez você nem perceba.\n\nE eu tenho medo.\nNão medo dela.\nNão medo do passado.\n\nTenho medo de ser pequena demais diante de tudo isso.\n\nPorque eu sei que eu não sou esse amor de uma década.\nNão sou a paixão que apertava teu peito até faltar ar.\nNão sou a pessoa que escreveu capítulos inteiros da tua vida.\n\nMas, meu Deus… como eu queria importar também.\n\nQueria ser mais do que uma fase tranquila depois do caos.\nMais do que alguém passageira enquanto você tenta reorganizar os sentimentos.\nQueria ser lembrança bonita, abrigo, permanência.\n\nQueria que quando você pensasse no futuro, meu rosto aparecesse sem esforço.\n\nE talvez a pior parte seja que você nunca me deu motivos concretos pra sentir isso.\nÉ só o jeito que o passado dos outros às vezes faz a gente se sentir atrasada numa corrida que nem deveria existir.\n\nMas eu queria que você soubesse:\neu não quero apagar ninguém da tua história.\nNão quero ocupar lugar nenhum à força.\n\nSó queria descobrir se existe espaço pra mim aí dentro…\nde um jeito verdadeiro.\nDe um jeito que fique.",
 
       frase:
-        " Eu olho para você Felipe, Eu olho tanto para você que, as vezes, deveria ser mais discreta. Ou olhar menos. Porque adoro o que vejo e nem acredito que, no meio de tantas estrelas, você brilhou para mim. ",
+        "Eu olho para você Felipe. Eu olho tanto para você que, às vezes, deveria ser mais discreta. Porque adoro o que vejo e nem acredito que, no meio de tantas estrelas, você brilhou para mim.",
 
-      // SELOS ✨
       selo1: "",
       selo2: "✧",
 
-      // FOTOS ✨
       foto1: "/usfoto1.jpg",
       foto2: "",
     },
@@ -62,8 +65,7 @@ export default function CartaIndividual() {
       musica: "From The Start",
       artista: "Laufey",
 
-      // OUTRA MÚSICA 🎵
-      arquivoMusica: "",
+      arquivoMusica: "/laufey.mp3",
 
       texto:
         "Saudade tua parece constelação.\nMesmo longe, continua brilhando em mim.",
@@ -85,8 +87,7 @@ export default function CartaIndividual() {
       musica: "Apocalypse",
       artista: "Cigarettes After Sex",
 
-      // OUTRA MÚSICA 🎵
-      arquivoMusica: "",
+      arquivoMusica: "/apocalypse.mp3",
 
       texto:
         "Eu ainda escolheria passar meus últimos minutos ouvindo tua voz.",
@@ -108,8 +109,7 @@ export default function CartaIndividual() {
       musica: "Space Song",
       artista: "Beach House",
 
-      // OUTRA MÚSICA 🎵
-      arquivoMusica: "",
+      arquivoMusica: "/spacesong.mp3",
 
       texto:
         "Tem partes minhas orbitando teu nome até hoje.",
@@ -131,13 +131,16 @@ export default function CartaIndividual() {
   const tocarMusica = () => {
     if (!carta?.arquivoMusica) return;
 
-    // pausa música anterior
+    // pausa anterior
     musicaPlayer.current?.pause();
 
     // cria nova música
     musicaPlayer.current = new Audio(carta.arquivoMusica);
 
     musicaPlayer.current.volume = 0.6;
+
+    // LOOP ✨
+    musicaPlayer.current.loop = true;
 
     musicaPlayer.current.play().catch(() => {});
   };
@@ -325,7 +328,10 @@ export default function CartaIndividual() {
           whileHover={{
             scale: 1.03,
           }}
-          onMouseEnter={tocarMusica}
+
+          onClick={tocarMusica}
+          onTouchStart={tocarMusica}
+
           className="relative z-10 mb-10 bg-[#fff7f2] border border-[#e8cfcf] rounded-2xl px-6 py-4 flex items-center gap-4 shadow-sm cursor-pointer"
         >
 

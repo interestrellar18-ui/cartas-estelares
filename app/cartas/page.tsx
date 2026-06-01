@@ -51,7 +51,7 @@ export default function cartas() {
 
   const cartas = [
     {
-      titulo: "Supernova",
+      titulo: "Estrelas para você",
       previa:
         "Acho que naquela noite o universo ficou pequeno demais pra os sentimentos que tenho por você.",
     },
