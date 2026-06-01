@@ -146,16 +146,14 @@ export default function CartaIndividual() {
   };
 
   // ESTRELAS ✨
-  const estrelas = useMemo(() => {
-    return [...Array(180)].map((_, i) => ({
-      id: i,
-      width: Math.random() * 3 + 1,
-      height: Math.random() * 3 + 1,
-      top: Math.random() * 100,
-      left: Math.random() * 100,
-      duration: Math.random() * 4 + 2,
-    }));
-  }, []);
+  const estrelas = Array.from({ length: 180 }, (_, i) => ({
+  id: i,
+  width: (i % 3) + 1,
+  height: (i % 3) + 1,
+  top: (i * 7) % 100,
+  left: (i * 13) % 100,
+  duration: (i % 4) + 2,
+}));
 
   if (!carta) {
     return (
