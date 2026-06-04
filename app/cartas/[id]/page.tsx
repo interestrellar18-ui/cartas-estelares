@@ -54,7 +54,7 @@ export default function CartaIndividual() {
       selo1: "",
       selo2: "✧",
 
-      foto1: "/nos.jpg",
+      foto1: "/nos1.jpg",
       foto2: "",
     },
 
