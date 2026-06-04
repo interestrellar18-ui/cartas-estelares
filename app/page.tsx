@@ -8,10 +8,10 @@ import { useEffect, useRef, useState } from "react";
 export default function Home() {
   const [mounted, setMounted] = useState(false);
 
-  // SOM DO BOTÃO ✨
+  // SOM DO BOTÃO 
   const entrarSound = useRef<HTMLAudioElement | null>(null);
 
-  // MÚSICA DE FUNDO ✨
+  // MÚSICA DE FUNDO 
   const musicaFundo = useRef<HTMLAudioElement | null>(null);
 
  useEffect(() => {

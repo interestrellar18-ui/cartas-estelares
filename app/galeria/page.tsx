@@ -14,11 +14,12 @@ const musicaPlayer = useRef<HTMLAudioElement | null>(null);
 
 
   const fotos = [
+    
+    "/strelinhas.jpg",
+    "/usfoto1.jpg",
     "/nos.jpg",
     "/sorriso.jpg",
     "/nosdois.jpg",
-    "/strelinhas.jpg",
-    "/usfoto1.jpg",
   ];
 
 const playlist = [
