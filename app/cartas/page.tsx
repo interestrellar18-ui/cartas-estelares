@@ -9,10 +9,10 @@ export default function cartas() {
   const [mounted, setMounted] = useState(false);
   const [cartaSelecionada, setCartaSelecionada] = useState<number | null>(null);
 
-  // SOM DA ESTRELA ✨
+  // SOM DA ESTRELA 
   const estrelaSound = useRef<HTMLAudioElement | null>(null);
 
-  // MÚSICA DE FUNDO ✨
+  // MÚSICA DE FUNDO 
   const musicaFundo = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
@@ -57,47 +57,55 @@ export default function cartas() {
     },
 
     {
-      titulo: "sobre sentir saudade",
+      titulo: "Sobre sentir saudade",
       previa:
-        "saudade tua parece constelação: mesmo longe, continua brilhando em mim.",
+        "Saudade tua parece constelação: mesmo longe, continua brilhando em mim.",
     },
 
     {
-      titulo: "se o mundo acabasse hoje",
+      titulo: "Se o mundo acabasse hoje",
       previa:
         "eu ainda escolheria passar meus últimos minutos ouvindo tua voz.",
     },
 
     {
-      titulo: "carta perdida entre estrelas",
+      titulo: "Enquanto Você Sorri",
       previa:
-        "tem partes minhas orbitando teu nome até hoje.",
+        "O mundo pode desabar devagar, desde que teu sorriso continue acendendo o meu.",
     },
 
     {
-      titulo: "quando teu abraço virou casa",
+      titulo: "Ciúme Bobo",
       previa:
-        "acho que foi ali que meu coração desaprendeu a ter medo.",
+        "Às vezes eu só preciso lembrar que teu sorriso ainda escolhe me procurar no meio da multidão.",
     },
+
+    {
+  titulo: "nova estrela",
+  previa: "prévia aqui",
+},
+
   ];
 
   const estrelas = [
-    { top: "18%", left: "20%" },
-    { top: "35%", left: "70%" },
-    { top: "60%", left: "40%" },
+    { top: "17%", left: "19%" },
+    { top: "34%", left: "69%" },
+    { top: "59%", left: "39%" },
     { top: "75%", left: "80%" },
-    { top: "54%", left: "5%" },
+    { top: "63%", left: "50%" },
+    { top: "50%", left: "50%" }
+  
   ];
 
-  // ESTRELAS FUNDO
-  const estrelasFundo = [...Array(220)].map((_, i) => ({
-    id: i,
-    size: Math.random() * 3 + 1,
-    top: Math.random() * 100,
-    left: Math.random() * 100,
-    duration: Math.random() * 6 + 3,
-    delay: Math.random() * 5,
-  }));
+ // ESTRELAS FUNDO
+const estrelasFundo = Array.from({ length: 220 }, (_, i) => ({
+  id: i,
+  size: Math.random() * 2 + 1,
+  top: Math.random() * 100,
+  left: Math.random() * 100,
+  duration: Math.random() * 6 + 4,
+  delay: Math.random() * 5,
+}));
 
   return (
     <motion.main
@@ -137,14 +145,16 @@ export default function cartas() {
               left: estrela.left + "%",
             }}
             animate={{
-              opacity: [0.2, 1, 0.2],
-              scale: [1, 1.5, 1],
-            }}
-            transition={{
-              repeat: Infinity,
-              duration: estrela.duration,
-              delay: estrela.delay,
-            }}
+  opacity: [0.15, 0.9, 0.15],
+  scale: [1, 1.8, 1],
+}}
+
+transition={{
+  repeat: Infinity,
+  duration: estrela.duration,
+  delay: estrela.delay,
+  ease: "easeInOut",
+}}
           />
         ))}
 
@@ -193,15 +203,43 @@ export default function cartas() {
               voltar
             </button>
 
+            {/* BOTÃO GALERIA */}
+<Link
+  href="/galeria"
+  className="
+    absolute
+    top-8
+    right-8
+
+    z-50
+
+    text-pink-200
+    italic
+
+    border
+    border-pink-200/20
+
+    px-5
+    py-2
+
+    rounded-full
+
+    hover:bg-pink-200/10
+    transition
+  "
+>
+  galeria estelar ✦
+</Link>
+
             {/* TÍTULO */}
             <div className="absolute top-10 w-full text-center">
 
-              <h1 className="text-5xl md:text-7xl font-serif text-pink-100 italic">
+              <h1 className="text-3xl md:text-5xl font-cinzel text-pink-100 italic">
                 Nosso universo
               </h1>
 
-              <p className="text-gray-400 italic mt-4 text-lg">
-                Escolha sua estrela.
+              <p className="text-gray-400 italic mt-0 text-sm">
+                Cada brilho esconde uma memória.
               </p>
 
             </div>
@@ -238,47 +276,111 @@ export default function cartas() {
 
             </svg>
 
-            {/* ESTRELAS */}
-            {estrelas.map((estrela, index) => (
-              <motion.button
-                key={index}
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                transition={{
-                  delay: index * 0.2,
-                  duration: 0.8,
-                }}
-                whileHover={{
-                  scale: 1.15,
-                }}
+           {/* ESTRELAS */}
+{estrelas.map((estrela, index) => (
+  <motion.button
+    key={index}
+    initial={{
+      scale: 0,
+      opacity: 0,
+    }}
+    animate={{
+      scale: 1,
+      opacity: 1,
+    }}
+    transition={{
+      delay: index * 0.2,
+      duration: 0.8,
+    }}
 
-                onMouseEnter={() => tocarSomEstrela()}
+    whileHover={{
+      scale: 1.18,
+    }}
 
-                onClick={() => setCartaSelecionada(index)}
-                className="absolute group flex flex-col items-center"
-                style={{
-                  top: estrela.top,
-                  left: estrela.left,
-                }}
-              >
+    whileTap={{
+      scale: 1.18,
+    }}
 
-                {/* BRILHO */}
-                <div className="absolute inset-0 rounded-full bg-pink-300 blur-xl opacity-60 group-hover:opacity-100 transition duration-500" />
+    onMouseEnter={() => tocarSomEstrela()}
+    onClick={() => setCartaSelecionada(index)}
 
-                {/* ESTRELA */}
-                <Star
-                  size={34}
-                  className="relative text-pink-100 fill-pink-100 animate-pulse"
-                />
+    className="absolute group flex flex-col items-center"
+    style={{
+      top: estrela.top,
+      left: estrela.left,
+    }}
+  >
 
-                {/* TÍTULO */}
-                <p className="mt-4 text-sm text-pink-100 italic text-center w-40 leading-relaxed">
-                  {cartas[index].titulo}
-                </p>
+    {/* AURA */}
+    <div
+      className="
+        absolute
+        w-14
+        h-14
+        rounded-full
+        bg-pink-300/30
+        blur-2xl
 
-              </motion.button>
-            ))}
+        opacity-20
+        scale-75
 
+        group-hover:opacity-100
+        group-hover:scale-150
+
+        transition-all
+        duration-500
+      "
+    />
+
+    {/* ESTRELA */}
+    <Star
+      size={22}
+      className="
+        relative
+        text-pink-100
+        fill-pink-100
+        animate-pulse
+
+        transition-all
+        duration-500
+
+        group-hover:text-white
+        group-hover:fill-white
+        group-hover:drop-shadow-[0_0_18px_rgba(255,220,240,1)]
+      "
+    />
+
+    {/* TÍTULO */}
+    <p
+      className="
+        absolute
+        top-10
+
+        text-sm
+        text-pink-100
+        italic
+        text-center
+
+        w-40
+        leading-relaxed
+
+        opacity-0
+        translate-y-2
+
+        group-hover:opacity-100
+        group-hover:translate-y-0
+
+        transition-all
+        duration-500
+
+        pointer-events-none
+      "
+    >
+      {cartas[index].titulo}
+    </p>
+
+  </motion.button>
+))}
           </motion.div>
         )}
 

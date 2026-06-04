@@ -63,10 +63,10 @@ export default function Home() {
   const estrelas = mounted
     ? [...Array(220)].map((_, i) => ({
         id: i,
-        size: Math.random() * 3 + 1,
-        top: Math.random() * 100,
-        left: Math.random() * 100,
-        duration: Math.random() * 4 + 2,
+       size: (i % 3) + 1,
+top: (i * 7) % 100,
+left: (i * 13) % 100,
+duration: (i % 4) + 2,
       }))
     : [];
 
@@ -140,7 +140,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
-          className="text-7xl md:text-8xl font-serif text-[#ffd6f2]"
+          className="text-7xl md:text-8xl font-cinzel text-[#ffd6f2]"
         >
           Cartas Estelares
         </motion.h1>
