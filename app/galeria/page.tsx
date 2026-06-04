@@ -36,7 +36,7 @@ const playlist = [
 
   {
     nome: "Só nós dois - Tim Bernardes",
-    arquivo: "/SoNosDois.mp3",
+    arquivo: "/sonosdois.mp3",
   },
 
   {

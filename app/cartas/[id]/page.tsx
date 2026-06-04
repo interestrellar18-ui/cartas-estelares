@@ -87,7 +87,7 @@ export default function CartaIndividual() {
       musica: "Só nós dois.",
       artista: "Tim Bernardes",
 
-      arquivoMusica: "/SoNosDois.mp3",
+      arquivoMusica: "/sonosdois.mp3",
 
       texto:
         "Se o mundo acabasse agora,\neu acho que nem iria perceber direito.\n\nPorque você tá sorrindo.\nE teu sorriso tem esse jeito absurdo\nde fazer o caos parecer distante.\n\nAs coisas poderiam estar desmoronando,\nos prédios caindo,\no céu rachando ao meio,\ne ainda assim,\ncom tua mão na minha,\neu continuaria achando a vida bonita.\n\nTalvez gostar seja isso:\nencontrar alguém que silencie o fim do mundo\nsó por existir perto.\n\nEntão, se tudo tiver mesmo prestes a acabar,\nnão me promete eternidade.\n\nSó sorri pra mim mais uma vez.\nPorque tem um tipo de paz\nque eu só conheço\nquando teus olhos encontram os meus.",
