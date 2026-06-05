@@ -17,7 +17,7 @@ const musicaPlayer = useRef<HTMLAudioElement | null>(null);
     
     "/strelinhas.jpg",
     "/usfoto1.jpg",
-    "/nos1.jpg",
+    "/nos1.jpeg",
     "/sorriso.jpg",
     "/nosdois.jpg",
   ];
