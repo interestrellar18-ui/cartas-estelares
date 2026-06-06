@@ -59,6 +59,10 @@ const playlist = [
     arquivo: "/pullovers.mp3",
   },
 
+   {
+    nome: "Último Romance - Los Hermanos",
+    arquivo: "/ultimoromance.mp3",
+  },
 ];
 
 const tocarMusica = (arquivo: string) => {
