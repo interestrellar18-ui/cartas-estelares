@@ -2,15 +2,26 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-
+import { useEffect, useRef, useState } from "react";
 import { Music2, X } from "lucide-react";
-import { useRef, useState } from "react";
 
 export default function Galeria() {
 
 const [menuMusica, setMenuMusica] = useState(false);
 
 const musicaPlayer = useRef<HTMLAudioElement | null>(null);
+useEffect(() => {
+
+  return () => {
+
+    if (musicaPlayer.current) {
+      musicaPlayer.current.pause();
+      musicaPlayer.current.currentTime = 0;
+    }
+
+  };
+
+}, []);
 
 
   const fotos = [
