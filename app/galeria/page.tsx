@@ -25,8 +25,8 @@ const musicaPlayer = useRef<HTMLAudioElement | null>(null);
 const playlist = [
 
   {
-    nome: "Interestelar - Mulamba",
-    arquivo: "/interestelar.mp3",
+    nome: "Se tiver que ser na bala, vai - Vnaguart",
+    arquivo: "/vanguart.mp3",
   },
 
   {
