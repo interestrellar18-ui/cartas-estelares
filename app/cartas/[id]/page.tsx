@@ -149,25 +149,25 @@ export default function CartaIndividual() {
 },
 
 {
-  titulo: "Nova estrela",
-  destinatario: "para você",
+  titulo: "Lugar que brilha",
+  destinatario: "Felipe",
 
-  musica: "x",
-  artista: "x",
+  musica: "1932",
+  artista: "Pullovers",
 
-  arquivoMusica: "",
+  arquivoMusica: "/pullovers.mp3",
 
   texto:
-    "",
+    "Às vezes eu olho pra você\nE penso em todas as histórias que vieram antes de mim\nTodas as pessoas que passaram pelo teu coração\nTodos os amores que já fizeram teu peito acelerar\n\nE então a insegurança sussurra\nQue talvez eu seja só mais uma sensação bonita\nEntre tantas outras que você já viveu\n\nComo se nada em mim pudesse ser novo\n\nMas aí você me olha daquele jeito calmo\nComo quem tenta juntar minhas partes trêmulas sem pressa\nE me faz perceber\nQue sentimentos não precisam ser inédita tempestade\nPra ser verdadeiro\n\nPorque você não tentou comparar sentimentos\nNão tentou medir o que viveu antes\n\nVocê só me escolheu\n\nE de algum jeito\nIsso silenciou o caos dentro de mim\n\nQuando você disse que era meu\nNão como posse\nMas como presença\nComo alguém que decidiu ficar\nEu senti meu coração respirar diferente\n\nPela primeira vez\nEu não queria competir com o passado de ninguém\n\nPorque você fez eu entender\nQue existir na tua vida\nJá é uma forma bonita de eternidade\n\nE talvez eu ainda tenha medo às vezes\nTalvez eu ainda duvide da luz que carrego\n\nMas então você segura minha mão\nE tudo em mim acredita outra vez",
 
   frase:
-    "",
+    "E assim, quando mais tarde me procure, quem sabe a morte, angústia de quem vive, quem sabe a solidão, fim de quem ama, eu possa me dizer do amor que tive, que não seja imortal, posto que é chama, mas que seja infinito enquanto dure",
 
-  selo1: "",
+  selo1: "☄",
   selo2: "",
 
   foto1: "",
-  foto2: "",
+  foto2: "/nosdois.jpeg",
 },
 
   ];

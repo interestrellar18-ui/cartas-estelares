@@ -54,6 +54,11 @@ const playlist = [
     arquivo: "/finginahoraderir.mp3",
   },
 
+  {
+    nome: "1932 - Pullovers",
+    arquivo: "/pullovers.mp3",
+  },
+
 ];
 
 const tocarMusica = (arquivo: string) => {

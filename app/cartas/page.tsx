@@ -81,8 +81,8 @@ export default function cartas() {
     },
 
     {
-  titulo: "nova estrela",
-  previa: "prévia aqui",
+  titulo: "Brilho que importa",
+  previa: "Tem pessoas que não apagam nossas inseguranças; elas só seguram nossa mão até a gente parar de acreditar nelas.",
 },
 
   ];
