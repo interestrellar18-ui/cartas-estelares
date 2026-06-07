@@ -27,35 +27,35 @@ export default function Galeria() {
 
   }, []);
 
-  // ✨ GALERIA COM FOTO + LEGENDA + VÍDEO
+  // ✦ GALERIA
   const midias = [
+
+    {
+      tipo: "imagem",
+      arquivo: "/usfoto1.jpg",
+      legenda: "Nossa primeira foto juntos",
+      rotacao: "rotate-2",
+    },
 
     {
       tipo: "imagem",
       arquivo: "/strelinhas.jpg",
       legenda: "as pequenas estrelas que nasceram entre nós ✦",
-      rotacao: "-rotate-3",
-    },
-
-    {
-      tipo: "imagem",
-      arquivo: "/usfoto1.jpg",
-      legenda: "te olhar sempre parece a primeira vez",
-      rotacao: "rotate-2",
+      rotacao: "-rotate-2",
     },
 
     {
       tipo: "video",
       arquivo: "/passarodefogo.mp4",
-      legenda: "um pedaço do tempo que eu quis guardar pra sempre",
-      rotacao: "-rotate-2",
+      legenda: "um pedaço do tempo que\neu quis guardar pra sempre",
+      rotacao: "-rotate-1",
     },
 
     {
       tipo: "imagem",
       arquivo: "/nos1.jpeg",
       legenda: "nós dois existindo no mesmo universo",
-      rotacao: "rotate-3",
+      rotacao: "rotate-2",
     },
 
     {
@@ -69,7 +69,23 @@ export default function Galeria() {
       tipo: "imagem",
       arquivo: "/nosdois.jpeg",
       legenda: "e no fim de tudo, ainda era você",
-      rotacao: "rotate-2",
+      rotacao: "rotate-1",
+    },
+
+    {
+      tipo: "video",
+      arquivo: "/zeramalho.mp4",
+      legenda:
+        "neste dia meu sorriso era\n reconhecível até do espaço",
+      rotacao: "-rotate-2",
+    },
+
+    {
+      tipo: "video",
+      arquivo: "/annajulia.mp4",
+      legenda:
+        "você leva sorrisos por onde passa.",
+      rotacao: "-rotate-2",
     },
 
   ];
@@ -137,15 +153,43 @@ export default function Galeria() {
     <main className="relative min-h-screen overflow-x-hidden bg-[#050816] text-white">
 
       {/* FUNDO */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 overflow-hidden">
 
         <div className="absolute w-[700px] h-[700px] bg-pink-500/10 blur-3xl rounded-full top-[-250px] left-[-150px]" />
 
         <div className="absolute w-[600px] h-[600px] bg-purple-500/10 blur-3xl rounded-full bottom-[-200px] right-[-100px]" />
 
+        {/* ESTRELAS */}
+        {Array.from({ length: 180 }).map((_, index) => (
+
+          <motion.div
+            key={index}
+
+            className="absolute rounded-full bg-white"
+
+            style={{
+              width: Math.random() * 3 + "px",
+              height: Math.random() * 3 + "px",
+              top: Math.random() * 100 + "%",
+              left: Math.random() * 100 + "%",
+            }}
+
+            animate={{
+              opacity: [0.2, 1, 0.2],
+            }}
+
+            transition={{
+              repeat: Infinity,
+              duration: Math.random() * 5 + 3,
+              delay: Math.random() * 5,
+            }}
+          />
+
+        ))}
+
       </div>
 
-      {/* VOLTAR */}
+      {/* BOTÃO VOLTAR */}
       <Link
         href="/cartas"
 
@@ -244,119 +288,175 @@ export default function Galeria() {
       </div>
 
       {/* GALERIA */}
-      <div className="relative z-10 px-4 md:px-10 pb-28">
+<div className="relative z-10 px-4 md:px-10 pb-28">
 
-        <div className="flex flex-col gap-16 items-center">
+  <div className="flex flex-col gap-20 items-center">
 
-          {midias.map((midia, index) => (
+    {midias.map((midia, index) => (
 
-            <motion.div
-              key={index}
+      <motion.div
+        key={index}
 
-              initial={{
-                opacity: 0,
-                y: 80,
-              }}
+        initial={{
+          opacity: 0,
+          y: 80,
+        }}
 
-              whileInView={{
-                opacity: 1,
-                y: 0,
-              }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+        }}
 
-              transition={{
-                duration: 1,
-              }}
+        transition={{
+          duration: 1,
+        }}
 
-              viewport={{
-                once: true,
-              }}
+        viewport={{
+          once: true,
+        }}
 
-              className={`
-                relative
+        className={`
+          relative
 
-                w-full
-                max-w-[650px]
+          inline-flex
+          flex-col
+          items-center
 
-                bg-white/5
-                backdrop-blur-xl
+          bg-[rgba(16,12,30,0.72)]
+          backdrop-blur-2xl
 
-                border
-                border-pink-200/10
+          border
+          border-pink-200/10
 
-                rounded-[35px]
+          rounded-[38px]
 
-                p-4
+          p-4
+          md:p-5
 
-                shadow-[0_0_80px_rgba(255,192,203,0.08)]
+          shadow-[0_0_80px_rgba(255,192,203,0.08)]
 
-                ${midia.rotacao}
-              `}
-            >
+          ${midia.rotacao}
+        `}
+      >
 
-              {/* POLAROID */}
-              <div className="bg-[#120f1f] rounded-[25px] overflow-hidden">
+        {/* BRILHO */}
+        <div
+          className="
+            absolute
+            inset-0
 
-                {midia.tipo === "imagem" ? (
+            rounded-[38px]
 
-                  <img
-                    src={midia.arquivo}
-                    alt=""
+            bg-gradient-to-b
+            from-white/[0.03]
+            to-transparent
 
-                    className="
-                      w-full
+            pointer-events-none
+          "
+        />
 
-                      h-[340px]
-                      md:h-[520px]
+        {/* MÍDIA */}
+        <div
+          className="
+            relative
 
-                      object-cover
-                    "
-                  />
+            overflow-hidden
 
-                ) : (
+            rounded-[28px]
 
-                  <video
-                    src={midia.arquivo}
+            bg-[#0b0718]
 
-                    controls
+            flex
+            items-center
+            justify-center
+          "
+        >
 
-                    className="
-                      w-full
+          {midia.tipo === "imagem" ? (
 
-                      h-[340px]
-                      md:h-[520px]
+            <img
+              src={midia.arquivo}
+              alt=""
 
-                      object-cover
-                    "
-                  />
+              className="
+                block
 
-                )}
+                w-auto
+                h-auto
 
-              </div>
+                max-w-[88vw]
+                md:max-w-[720px]
 
-              {/* LEGENDA */}
-              <p
-                className="
-                  text-center
+                max-h-[78vh]
 
-                  text-pink-100/90
-                  italic
+                object-contain
 
-                  mt-5
+                rounded-[24px]
+              "
+            />
 
-                  text-base
-                  md:text-xl
+          ) : (
 
-                  font-cinzel
-                "
-              >
-                {midia.legenda}
-              </p>
+            <video
+              src={midia.arquivo}
 
-            </motion.div>
+              controls
 
-          ))}
+              className="
+                block
+
+                w-auto
+                h-auto
+
+                max-w-[88vw]
+                md:max-w-[720px]
+
+                max-h-[78vh]
+
+                object-contain
+
+                rounded-[24px]
+
+                bg-black
+              "
+            />
+
+          )}
 
         </div>
+
+        {/* LEGENDA */}
+        <p
+          className="
+            mt-6
+
+            max-w-[85vw]
+            md:max-w-[650px]
+
+            text-center
+
+            text-pink-100/90
+
+            italic
+
+            text-sm
+            md:text-xl
+
+            leading-relaxed
+
+            whitespace-pre-line
+
+            font-cinzel
+          "
+        >
+          {midia.legenda}
+        </p>
+
+      </motion.div>
+
+    ))}
+
+  </div>
 
       </div>
 
