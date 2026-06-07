@@ -469,9 +469,7 @@ export default function cartas() {
                 "
               >
 
-                <ArrowLeft size={18} />
-
-                voltar
+                ✦ voltar 
 
               </button>
 
