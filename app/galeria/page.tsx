@@ -29,46 +29,152 @@ export default function Galeria() {
 
   // ✦ GALERIA
   const midias = [
-
+    
     {
-      tipo: "imagem",
-      arquivo: "/usfoto1.jpg",
-      legenda: "Nossa primeira foto juntos",
-      rotacao: "rotate-2",
+      tipo: "video",
+      arquivo: "/30deabril.mp4",
+      legenda:
+        "-Eu errei uma nota,\n mas aqui meu passatempo.\n 30 de abril de 2026",
+      rotacao: "-rotate-1",
     },
-
+    
     {
-      tipo: "imagem",
-      arquivo: "/strelinhas.jpg",
-      legenda: "as pequenas estrelas que nasceram entre nós ✦",
+      tipo: "video",
+      arquivo: "/domquixote.mp4",
+      legenda:
+        "Por amor as causas perdidas\n 03 de maio de 2026",
       rotacao: "-rotate-2",
     },
 
     {
       tipo: "video",
+      arquivo: "/algoparecido.mp4",
+      legenda:
+        "Quando tocou a música que eu pedi.\n 03 de maio de 2026",
+      rotacao: "-rotate-2",
+    },
+
+    {
+      tipo: "video",
+      arquivo: "/asitwas.mp4",
+      legenda:
+        "Felipe, you're no good alone \n 03 de maio de 2026",
+      rotacao: "-rotate-2",
+    },
+
+    {
+      tipo: "imagem",
+      arquivo: "/cantandojunto.jpeg",
+      legenda: "Primeiro dueto\n 04 de maio de 2026",
+      rotacao: "rotate-1",
+    },
+
+    {
+      tipo: "imagem",
+      arquivo: "/tokverde.jpg",
+      legenda: "Me levou na cafeteria\n porque eu estava triste \n 04 de maio de 2026",
+      rotacao: "rotate-1",
+    },
+
+    {
+      tipo: "imagem",
+      arquivo: "/coracao.jpg",
+      legenda: "Histologia do dia que te conheci\n 05 de maio de 2026",
+      rotacao: "rotate-1",
+    },
+
+    {
+      tipo: "video",
+      arquivo: "/annajulia.mp4",
+      legenda:
+        "você leva sorrisos por onde passa.\n 06 de maio de 2026",
+      rotacao: "-rotate-1",
+    },
+   
+    {
+      tipo: "imagem",
+      arquivo: "/melao.jpg",
+      legenda: "O que vale é o momento\n 22 de maio de 2026",
+      rotacao: "rotate-2",
+    },
+
+    {
+      tipo: "video",
+      arquivo: "/detonautas.mp4",
+      legenda:
+        "Quando o sol se for\n 23 de maio de 2026",
+      rotacao: "-rotate-1",
+    },
+
+    {
+      tipo: "video",
+      arquivo: "/camila.mp4",
+      legenda:
+        "Camila, Camila \n 23 de maio de 2026",
+      rotacao: "-rotate-2",
+    },
+
+    {
+      tipo: "video",
+      arquivo: "/carla.mp4",
+      legenda:
+        "Carla \n 23 de maio de 2026",
+      rotacao: "-rotate-1",
+    },
+
+    {
+      tipo: "video",
       arquivo: "/passarodefogo.mp4",
-      legenda: "um pedaço do tempo que\neu quis guardar pra sempre",
+      legenda: "um pedaço do tempo que\n eu quis guardar pra sempre\n 25 de maio de 2026",
+      rotacao: "-rotate-2",
+    },
+
+    {
+      tipo: "imagem",
+      arquivo: "/strelinhas.jpg",
+      legenda: "as pequenas estrelas que nasceram entre nós ✦\n 27 de maio de 2026",
       rotacao: "-rotate-1",
     },
 
     {
       tipo: "imagem",
-      arquivo: "/nos1.jpeg",
-      legenda: "nós dois existindo no mesmo universo",
+      arquivo: "/usfoto1.jpg",
+      legenda: "31 de maio de 2026\n Nossa primeira foto juntos.",
       rotacao: "rotate-2",
     },
 
     {
       tipo: "imagem",
+      arquivo: "/feliz.jpg",
+      legenda: "Seu sorriso clareia o mais cinza dos dias\n01 de junho de 2026",
+      rotacao: "rotate-1",
+    },
+
+     {
+      tipo: "imagem",
+      arquivo: "/casaldepassaro.jpg",
+      legenda: "Os pássaros veem a gente\n01 de junho de 2026",
+      rotacao: "rotate-2",
+    },
+
+    {
+      tipo: "imagem",
+      arquivo: "/nos1.jpeg",
+      legenda: "nós dois existindo no mesmo universo\n 02 de junho de 2026",
+      rotacao: "rotate-1",
+    },
+
+    {
+      tipo: "imagem",
       arquivo: "/sorriso.jpeg",
-      legenda: "o teu sorriso muda a gravidade do mundo",
+      legenda: "o teu sorriso muda a gravidade do mundo\n 02 de junho de 2026",
       rotacao: "-rotate-2",
     },
 
     {
       tipo: "imagem",
       arquivo: "/nosdois.jpeg",
-      legenda: "e no fim de tudo, ainda era você",
+      legenda: "e no fim de tudo, ainda era você\n 02 de junho de 2026",
       rotacao: "rotate-1",
     },
 
@@ -76,61 +182,161 @@ export default function Galeria() {
       tipo: "video",
       arquivo: "/zeramalho.mp4",
       legenda:
-        "neste dia meu sorriso era\n reconhecível até do espaço",
+        "neste dia meu sorriso era\n reconhecível até do espaço\n 05 de junho de 2026",
       rotacao: "-rotate-2",
     },
 
     {
-      tipo: "video",
-      arquivo: "/annajulia.mp4",
-      legenda:
-        "você leva sorrisos por onde passa.",
-      rotacao: "-rotate-2",
+      tipo: "imagem",
+      arquivo: "/almoso.jpeg",
+      legenda: "05 de junho de 2026",
+      rotacao: "rotate-2",
     },
+
 
   ];
 
   const playlist = [
 
     {
-      nome: "Se tiver que ser na bala, vai - Vanguart",
-      arquivo: "/vanguart.mp3",
-    },
+  nome: "Se Tiver Que Ser Na Bala, Vai - Vanguart",
+  arquivo: "/vanguart.mp3",
+},
 
-    {
-      nome: "Algo Parecido - Skank",
-      arquivo: "/algoparecido.mp3",
-    },
+{
+  nome: "Algo Parecido - Skank",
+  arquivo: "/algoparecido.mp3",
+},
 
-    {
-      nome: "Só nós dois - Tim Bernardes",
-      arquivo: "/sonosdois.mp3",
-    },
+{
+  nome: "Só Nós Dois - Tim Bernardes",
+  arquivo: "/sonosdois.mp3",
+},
 
-    {
-      nome: "cíume - Venere Vai Vênus",
-      arquivo: "/ciume.mp3",
-    },
+{
+  nome: "Sentimental - Los Hermanos",
+  arquivo: "/sentimental.mp3",
+},
 
-    {
-      nome: "Sentimental - Los Hermanos",
-      arquivo: "/sentimental.mp3",
-    },
+{
+  nome: "Fingi Na Hora De Rir - Los Hermanos",
+  arquivo: "/finginahoraderir.mp3",
+},
 
-    {
-      nome: "Fingi na hora de rir - Los Hermanos",
-      arquivo: "/finginahoraderir.mp3",
-    },
+{
+  nome: "1932 - Pullovers",
+  arquivo: "/pullovers.mp3",
+},
 
-    {
-      nome: "1932 - Pullovers",
-      arquivo: "/pullovers.mp3",
-    },
+{
+  nome: "Último Romance - Los Hermanos",
+  arquivo: "/ultimoromance.mp3",
+},
 
-    {
-      nome: "Último Romance - Los Hermanos",
-      arquivo: "/ultimoromance.mp3",
-    },
+{
+  nome: "Linha Do Equador - Djavan",
+  arquivo: "/linhadoequador.mp3",
+},
+
+{
+  nome: "Lilás - Djavan",
+  arquivo: "/lilas.mp3",
+},
+
+{
+  nome: "Oceano - Djavan",
+  arquivo: "/oceano.mp3",
+},
+
+{
+  nome: "3x4 - Engenheiros Do Hawaii",
+  arquivo: "/3x4.mp3",
+},
+
+{
+  nome: "Todas As Canções São De Amor - Pullovers",
+  arquivo: "/todasascancoessaodeamor.mp3",
+},
+
+{
+  nome: "Meu Amor - O Grilo",
+  arquivo: "/meuamor.mp3",
+},
+
+{
+  nome: "Pra Você Gostar De Mim - O Grilo",
+  arquivo: "/pravocegostardemim.mp3",
+},
+
+{
+  nome: "Gostar Só Dela - Selvagens À Procura De Lei",
+  arquivo: "/gostarsodela.mp3",
+},
+
+{
+  nome: "Enquanto Eu Passar Na Sua Rua - Selvagens À Procura De Lei",
+  arquivo: "/enquantoeupassarnasuarua.mp3",
+},
+
+{
+  nome: "Retrato Para Iaiá - Los Hermanos",
+  arquivo: "/iaia.mp3",
+},
+
+{
+  nome: "Lábia - Jão",
+  arquivo: "/labia.mp3",
+},
+
+{
+  nome: "Alinhamento Milenar - Jão",
+  arquivo: "/alinhamentomilenar.mp3",
+},
+
+{
+  nome: "Pensando Em Ti - Nelson Gonçalves",
+  arquivo: "/pensandoemti.mp3",
+},
+
+{
+  nome: "Me Lambe - Jão",
+  arquivo: "/melambe.mp3",
+},
+
+{
+  nome: "Serenata Existencialista - O Grilo",
+  arquivo: "/serenataexistencialista.mp3",
+},
+
+{
+  nome: "Eu Te Amo - Lagum",
+  arquivo: "/euteamo.mp3",
+},
+
+{
+  nome: "Sombra No Sol - O Grilo",
+  arquivo: "/sombranosol.mp3",
+},
+
+{
+  nome: "Pelo Gosto Que As Notas Deixam Na Boca - O Grilo",
+  arquivo: "/pelogostoqueasnotasdeixamnaboca.mp3",
+},
+
+{
+  nome: "BB (Garupa De Moto Amarela) - Tim Bernardes",
+  arquivo: "/bebe.mp3",
+},
+
+{
+  nome: "Interestelar - Mulamba",
+  arquivo: "/interestelar.mp3",
+},
+
+{
+  nome: "Ciúmes - Venere Vai Venus",
+  arquivo: "/ciume.mp3",
+},
 
   ];
 

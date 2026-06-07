@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { ArrowLeft, Star } from "lucide-react";
+import { Star, Music4 } from "lucide-react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -39,7 +39,7 @@ export default function cartas() {
 
     });
 
-    // PAUSAR QUANDO SAIR DO APP
+    // PAUSAR QUANDO SAIR
     const controlarVisibilidade = () => {
 
       if (document.hidden) {
@@ -59,7 +59,6 @@ export default function cartas() {
       controlarVisibilidade
     );
 
-    // LIMPEZA
     return () => {
 
       document.removeEventListener(
@@ -129,7 +128,7 @@ export default function cartas() {
 
   ];
 
-  // ORDEM DAS ESTRELAS
+  // POSIÇÕES DAS ESTRELAS
   const estrelas = [
 
     { top: "18%", left: "20%" },
@@ -296,7 +295,6 @@ export default function cartas() {
 
             </div>
 
-
             {/* ESTRELAS */}
             {estrelas.map((estrela, index) => (
 
@@ -418,7 +416,7 @@ export default function cartas() {
 
             ))}
 
-            {/* BOTÕES EMBAIXO */}
+            {/* BOTÕES */}
             <div
               className="
                 absolute
@@ -469,7 +467,7 @@ export default function cartas() {
                 "
               >
 
-                ✦ voltar 
+               voltar ✦
 
               </button>
 
@@ -506,6 +504,48 @@ export default function cartas() {
               >
 
                 galeria estelar ✦
+
+              </Link>
+
+              {/* PLAYLIST */}
+              <Link
+
+                href="/playlist"
+
+                onClick={() => {
+
+                  musicaFundo.current?.pause();
+
+                }}
+
+                className="
+                  flex
+                  items-center
+                  gap-2
+
+                  text-pink-200
+                  italic
+
+                  border
+                  border-pink-200/20
+
+                  px-6
+                  py-3
+
+                  rounded-full
+
+                  bg-[#090d1f]/40
+                  backdrop-blur-xl
+
+                  hover:bg-pink-200/10
+
+                  transition
+                "
+              >
+
+                <Music4 size={18} />
+
+                trilha cósmica ✦
 
               </Link>
 
