@@ -19,7 +19,7 @@ export default function PlaylistPage() {
   const [indiceAtual, setIndiceAtual] = useState(0);
   const [progresso, setProgresso] = useState(0);
 
-  const playlist = [
+ const playlist = [
    {
   nome: "Se Tiver Que Ser Na Bala, Vai",
   artista: "Vanguart",
@@ -306,7 +306,7 @@ export default function PlaylistPage() {
   useEffect(() => {
     const audio = new Audio(musicaAtual.arquivo);
 
-    audio.volume = 0.3;
+    audio.volume = 0.4;
 
     audioRef.current = audio;
 
@@ -330,6 +330,7 @@ export default function PlaylistPage() {
 
     return () => {
       audio.pause();
+
       audio.removeEventListener(
         "timeupdate",
         atualizar
@@ -373,36 +374,42 @@ export default function PlaylistPage() {
         relative
 
         bg-gradient-to-br
-        from-[#040611]
-        via-[#111739]
-        to-[#1d1034]
+        from-[#050816]
+        via-[#0e1330]
+        to-[#170d2d]
 
-        px-6
-        py-14
+        px-4
+        sm:px-6
+        py-6
+        sm:py-10
 
         text-white
       "
     >
       {/* ESTRELAS */}
       <div className="absolute inset-0 overflow-hidden">
-        {Array.from({ length: 180 }).map((_, i) => (
-          <div
-            key={i}
-            className="absolute bg-white rounded-full opacity-70"
-            style={{
-              width: Math.random() * 2 + "px",
-              height: Math.random() * 2 + "px",
-              top: Math.random() * 100 + "%",
-              left: Math.random() * 100 + "%",
-            }}
-          />
-        ))}
+        {Array.from({ length: 180 }).map((_, i) => {
+          const size = (i % 3) + 1;
+
+          return (
+            <div
+              key={i}
+              className="absolute bg-white rounded-full opacity-70"
+              style={{
+                width: `${size}px`,
+                height: `${size}px`,
+                top: `${(i * 7) % 100}%`,
+                left: `${(i * 13) % 100}%`,
+              }}
+            />
+          );
+        })}
       </div>
 
       {/* NEBULOSAS */}
-      <div className="absolute w-[500px] h-[500px] bg-pink-500/10 blur-3xl rounded-full top-[-200px] left-[-100px]" />
+      <div className="absolute w-[400px] h-[400px] bg-pink-500/10 blur-3xl rounded-full top-[-150px] left-[-100px]" />
 
-      <div className="absolute w-[500px] h-[500px] bg-purple-500/10 blur-3xl rounded-full bottom-[-200px] right-[-100px]" />
+      <div className="absolute w-[400px] h-[400px] bg-purple-500/10 blur-3xl rounded-full bottom-[-150px] right-[-100px]" />
 
       {/* CARD */}
       <div
@@ -410,22 +417,39 @@ export default function PlaylistPage() {
           relative
           z-10
 
+          w-full
           max-w-6xl
+
           mx-auto
 
-          rounded-[40px]
+          rounded-[28px]
 
-          bg-[#181b38]/70
+          bg-[#161938]/75
           backdrop-blur-2xl
 
           border
           border-pink-200/10
 
-          p-10
+          px-5
+          py-6
+
+          sm:p-8
+          lg:p-10
         "
       >
         {/* TOPO */}
-        <div className="flex items-center justify-between mb-14">
+        <div
+          className="
+            flex
+            items-center
+            justify-between
+
+            gap-4
+
+            mb-8
+            md:mb-10
+          "
+        >
           <Link
             href="/cartas"
             className="
@@ -444,8 +468,10 @@ export default function PlaylistPage() {
               italic
 
               hover:bg-white/20
+              transition-all
 
-              transition
+              text-sm
+              md:text-base
             "
           >
             <ArrowLeft size={18} />
@@ -454,13 +480,16 @@ export default function PlaylistPage() {
 
           <h1
             className="
-              text-5xl
+              text-2xl
+              sm:text-3xl
+              md:text-5xl
+
               italic
               text-pink-100
               font-serif
             "
           >
-            playlist!
+            nossos sons!
           </h1>
         </div>
 
@@ -471,22 +500,26 @@ export default function PlaylistPage() {
             flex-col
             lg:flex-row
 
-            gap-16
+            gap-8
+            lg:gap-12
 
             items-center
 
-            mb-16
+            mb-12
           "
         >
           {/* PLANETA */}
-          <div className="relative flex items-center justify-center">
+          <div className="relative flex items-center justify-center shrink-0">
             {/* GLOW */}
             <div
               className="
                 absolute
 
-                w-[380px]
-                h-[380px]
+                w-[220px]
+                h-[220px]
+
+                sm:w-[280px]
+                sm:h-[280px]
 
                 rounded-full
 
@@ -502,8 +535,11 @@ export default function PlaylistPage() {
               className="
                 absolute
 
-                w-[340px]
-                h-[110px]
+                w-[220px]
+                h-[70px]
+
+                sm:w-[280px]
+                sm:h-[90px]
 
                 rounded-full
 
@@ -519,8 +555,11 @@ export default function PlaylistPage() {
               className={`
                 relative
 
-                w-[280px]
-                h-[280px]
+                w-[180px]
+                h-[180px]
+
+                sm:w-[240px]
+                sm:h-[240px]
 
                 rounded-full
                 overflow-hidden
@@ -547,11 +586,11 @@ export default function PlaylistPage() {
               <div
                 className="
                   absolute
-                  top-8
-                  left-8
+                  top-6
+                  left-6
 
-                  w-32
-                  h-32
+                  w-20
+                  h-20
 
                   rounded-full
 
@@ -561,7 +600,14 @@ export default function PlaylistPage() {
               />
 
               {/* ÍCONE */}
-              <span className="text-[90px] z-10">
+              <span
+                className="
+                  text-[60px]
+                  sm:text-[75px]
+
+                  z-10
+                "
+              >
                 {musicaAtual.icone}
               </span>
             </div>
@@ -571,9 +617,14 @@ export default function PlaylistPage() {
           <div className="flex-1 w-full">
             <h2
               className="
-                text-5xl
+                text-3xl
+                sm:text-4xl
+                lg:text-5xl
+
                 italic
                 font-serif
+
+                leading-tight
 
                 text-pink-100
               "
@@ -590,6 +641,8 @@ export default function PlaylistPage() {
                 tracking-[4px]
 
                 text-gray-400
+
+                text-sm
               "
             >
               {musicaAtual.artista}
@@ -597,13 +650,15 @@ export default function PlaylistPage() {
 
             <p
               className="
-                mt-8
+                mt-6
 
                 italic
 
-                text-gray-300
+                text-gray-200
 
-                text-lg
+                text-base
+                md:text-xl
+
                 leading-relaxed
               "
             >
@@ -613,7 +668,7 @@ export default function PlaylistPage() {
             {/* BARRA */}
             <div
               className="
-                mt-10
+                mt-7
 
                 w-full
                 h-2
@@ -640,12 +695,23 @@ export default function PlaylistPage() {
             </div>
 
             {/* CONTROLES */}
-            <div className="flex items-center gap-6 mt-10">
+            <div
+              className="
+                flex
+                items-center
+                justify-center
+                lg:justify-start
+
+                gap-5
+
+                mt-7
+              "
+            >
               <button
                 onClick={musicaAnterior}
                 className="
-                  w-14
-                  h-14
+                  w-12
+                  h-12
 
                   rounded-full
 
@@ -660,14 +726,14 @@ export default function PlaylistPage() {
                   transition
                 "
               >
-                <SkipBack />
+                <SkipBack size={20} />
               </button>
 
               <button
                 onClick={togglePlay}
                 className="
-                  w-20
-                  h-20
+                  w-16
+                  h-16
 
                   rounded-full
 
@@ -686,17 +752,17 @@ export default function PlaylistPage() {
                 "
               >
                 {tocando ? (
-                  <Pause size={34} />
+                  <Pause size={30} />
                 ) : (
-                  <Play size={34} />
+                  <Play size={30} />
                 )}
               </button>
 
               <button
                 onClick={proximaMusica}
                 className="
-                  w-14
-                  h-14
+                  w-12
+                  h-12
 
                   rounded-full
 
@@ -711,14 +777,14 @@ export default function PlaylistPage() {
                   transition
                 "
               >
-                <SkipForward />
+                <SkipForward size={20} />
               </button>
             </div>
           </div>
         </div>
 
         {/* LISTA */}
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid lg:grid-cols-2 gap-4">
           {playlist.map((musica, index) => (
             <button
               key={index}
@@ -728,21 +794,23 @@ export default function PlaylistPage() {
               }}
               className={`
                 flex
-                items-center
+                items-start
 
-                gap-5
+                gap-4
 
-                p-5
+                p-4
 
-                rounded-[30px]
+                rounded-[24px]
 
                 border
 
                 transition-all
 
+                text-left
+
                 ${
                   indiceAtual === index
-                    ? "bg-pink-200/10 border-pink-200/20 scale-[1.02]"
+                    ? "bg-pink-200/10 border-pink-200/20"
                     : "bg-white/5 border-white/10 hover:bg-white/10"
                 }
               `}
@@ -750,8 +818,11 @@ export default function PlaylistPage() {
               {/* ÍCONE */}
               <div
                 className={`
-                  w-20
-                  h-20
+                  w-14
+                  h-14
+
+                  sm:w-16
+                  sm:h-16
 
                   rounded-full
 
@@ -765,29 +836,33 @@ export default function PlaylistPage() {
                   shrink-0
                 `}
               >
-                <span className="text-4xl">
+                <span className="text-2xl sm:text-3xl">
                   {musica.icone}
                 </span>
               </div>
 
               {/* TEXTO */}
-              <div className="flex-1 text-left">
-                <div className="flex items-center justify-between">
+              <div className="flex-1 min-w-0">
+                <div className="flex items-start justify-between gap-3">
                   <h3
                     className="
-                      text-2xl
+                      text-xl
+                      sm:text-2xl
+
                       italic
                       font-serif
 
                       text-pink-100
+
+                      leading-tight
                     "
                   >
                     {musica.nome}
                   </h3>
 
                   <Heart
-                    size={18}
-                    className="text-pink-200"
+                    size={16}
+                    className="text-pink-200 shrink-0"
                   />
                 </div>
 
@@ -796,7 +871,7 @@ export default function PlaylistPage() {
                     text-gray-400
                     mt-1
 
-                    text-sm
+                    text-xs
 
                     uppercase
 
@@ -814,7 +889,7 @@ export default function PlaylistPage() {
 
                     text-sm
 
-                    mt-4
+                    mt-3
 
                     leading-relaxed
                   "

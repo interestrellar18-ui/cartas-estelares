@@ -9,7 +9,8 @@ export default function cartas() {
 
   const [mounted, setMounted] = useState(false);
 
-  const [cartaSelecionada, setCartaSelecionada] = useState<number | null>(null);
+  const [cartaSelecionada, setCartaSelecionada] =
+    useState<number | null>(null);
 
   // SOM DA ESTRELA
   const estrelaSound = useRef<HTMLAudioElement | null>(null);
@@ -146,21 +147,24 @@ export default function cartas() {
   ];
 
   // ESTRELAS FUNDO
-  const estrelasFundo = Array.from({ length: 220 }, (_, i) => ({
+  const estrelasFundo = Array.from(
+    { length: 220 },
+    (_, i) => ({
 
-    id: i,
+      id: i,
 
-    size: Math.random() * 2 + 1,
+      size: Math.random() * 2 + 1,
 
-    top: Math.random() * 100,
+      top: Math.random() * 100,
 
-    left: Math.random() * 100,
+      left: Math.random() * 100,
 
-    duration: Math.random() * 6 + 4,
+      duration: Math.random() * 6 + 4,
 
-    delay: Math.random() * 5,
+      delay: Math.random() * 5,
 
-  }));
+    })
+  );
 
   return (
 
@@ -186,7 +190,7 @@ export default function cartas() {
       className="
         relative
         min-h-screen
-        overflow-hidden
+        overflow-x-hidden
         bg-[#050816]
         text-white
         flex
@@ -244,9 +248,43 @@ export default function cartas() {
       </div>
 
       {/* NEBULOSAS */}
-      <div className="absolute w-[600px] h-[600px] bg-pink-500/10 blur-3xl rounded-full top-[-200px] left-[-100px]" />
+      <div
+        className="
+          absolute
+          w-[320px]
+          h-[320px]
+          sm:w-[450px]
+          sm:h-[450px]
+          md:w-[600px]
+          md:h-[600px]
+          bg-pink-500/10
+          blur-3xl
+          rounded-full
+          top-[-120px]
+          left-[-80px]
+          md:top-[-200px]
+          md:left-[-100px]
+        "
+      />
 
-      <div className="absolute w-[500px] h-[500px] bg-purple-500/10 blur-3xl rounded-full bottom-[-150px] right-[-100px]" />
+      <div
+        className="
+          absolute
+          w-[300px]
+          h-[300px]
+          sm:w-[400px]
+          sm:h-[400px]
+          md:w-[500px]
+          md:h-[500px]
+          bg-purple-500/10
+          blur-3xl
+          rounded-full
+          bottom-[-120px]
+          right-[-80px]
+          md:bottom-[-150px]
+          md:right-[-100px]
+        "
+      />
 
       <AnimatePresence mode="wait">
 
@@ -279,17 +317,48 @@ export default function cartas() {
               duration: 1.2,
             }}
 
-            className="relative z-10 w-full h-screen"
+            className="
+              relative
+              z-10
+              w-full
+              min-h-screen
+            "
           >
 
             {/* TÍTULO */}
-            <div className="absolute top-10 w-full text-center">
+            <div
+              className="
+                absolute
+                top-8
+                sm:top-10
+                w-full
+                text-center
+                px-6
+              "
+            >
 
-              <h1 className="text-3xl md:text-5xl font-cinzel text-pink-100 italic">
+              <h1
+                className="
+                  text-2xl
+                  sm:text-4xl
+                  md:text-5xl
+                  font-cinzel
+                  text-pink-100
+                  italic
+                "
+              >
                 Nosso universo
               </h1>
 
-              <p className="text-gray-400 italic mt-1 text-sm">
+              <p
+                className="
+                  text-gray-400
+                  italic
+                  mt-2
+                  text-xs
+                  sm:text-sm
+                "
+              >
                 Cada brilho esconde uma memória.
               </p>
 
@@ -347,8 +416,10 @@ export default function cartas() {
                 <div
                   className="
                     absolute
-                    w-14
-                    h-14
+                    w-12
+                    h-12
+                    sm:w-14
+                    sm:h-14
                     rounded-full
                     bg-pink-300/30
                     blur-2xl
@@ -366,9 +437,12 @@ export default function cartas() {
 
                 {/* ESTRELA */}
                 <Star
-                  size={22}
+                  size={18}
 
                   className="
+                    sm:w-[22px]
+                    sm:h-[22px]
+
                     relative
                     text-pink-100
                     fill-pink-100
@@ -387,14 +461,19 @@ export default function cartas() {
                 <p
                   className="
                     absolute
-                    top-10
+                    top-8
+                    sm:top-10
 
-                    text-sm
+                    text-[11px]
+                    sm:text-sm
+
                     text-pink-100
                     italic
                     text-center
 
-                    w-40
+                    w-28
+                    sm:w-40
+
                     leading-relaxed
 
                     opacity-0
@@ -420,14 +499,22 @@ export default function cartas() {
             <div
               className="
                 absolute
-                bottom-10
+                bottom-8
                 left-1/2
                 -translate-x-1/2
 
                 flex
-                gap-5
+                flex-wrap
+                justify-center
+
+                gap-3
+                sm:gap-5
 
                 z-50
+
+                px-4
+                w-full
+                max-w-4xl
               "
             >
 
@@ -453,7 +540,9 @@ export default function cartas() {
                   border
                   border-pink-200/20
 
-                  px-6
+                  px-4
+                  sm:px-6
+
                   py-3
 
                   rounded-full
@@ -464,10 +553,13 @@ export default function cartas() {
                   hover:bg-pink-200/10
 
                   transition
+
+                  text-sm
+                  sm:text-base
                 "
               >
 
-               voltar ✦
+                voltar ✦
 
               </button>
 
@@ -489,7 +581,9 @@ export default function cartas() {
                   border
                   border-pink-200/20
 
-                  px-6
+                  px-4
+                  sm:px-6
+
                   py-3
 
                   rounded-full
@@ -500,6 +594,9 @@ export default function cartas() {
                   hover:bg-pink-200/10
 
                   transition
+
+                  text-sm
+                  sm:text-base
                 "
               >
 
@@ -529,7 +626,9 @@ export default function cartas() {
                   border
                   border-pink-200/20
 
-                  px-6
+                  px-4
+                  sm:px-6
+
                   py-3
 
                   rounded-full
@@ -540,10 +639,13 @@ export default function cartas() {
                   hover:bg-pink-200/10
 
                   transition
+
+                  text-sm
+                  sm:text-base
                 "
               >
 
-                <Music4 size={18} />
+                <Music4 size={16} />
 
                 trilha cósmica ✦
 
@@ -588,7 +690,8 @@ export default function cartas() {
               flex
               items-center
               justify-center
-              px-6
+              px-4
+              sm:px-6
             "
           >
 
@@ -622,11 +725,17 @@ export default function cartas() {
                 border
                 border-pink-200/10
                 backdrop-blur-2xl
-                rounded-[40px]
-                p-10
+                rounded-[32px]
+                sm:rounded-[40px]
+
+                p-6
+                sm:p-10
+
                 shadow-2xl
+
                 max-w-xl
                 w-full
+
                 overflow-hidden
               "
             >
@@ -635,30 +744,59 @@ export default function cartas() {
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-40 h-40 bg-pink-300/20 blur-3xl rounded-full" />
 
               {/* ESTRELA */}
-              <div className="flex justify-center mb-6">
+              <div className="flex justify-center mb-5 sm:mb-6">
 
                 <Star
-                  className="text-pink-200 fill-pink-200 animate-pulse"
-                  size={28}
+                  className="
+                    text-pink-200
+                    fill-pink-200
+                    animate-pulse
+                  "
+                  size={26}
                 />
 
               </div>
 
               {/* TÍTULO */}
-              <h2 className="text-4xl text-center font-serif text-pink-100 italic mb-8">
+              <h2
+                className="
+                  text-2xl
+                  sm:text-4xl
+
+                  text-center
+                  font-serif
+                  text-pink-100
+                  italic
+
+                  mb-6
+                  sm:mb-8
+                "
+              >
                 {cartas[cartaSelecionada].titulo}
               </h2>
 
               {/* LINHA */}
-              <div className="w-24 h-[1px] bg-pink-200/30 mx-auto mb-8" />
+              <div className="w-24 h-[1px] bg-pink-200/30 mx-auto mb-6 sm:mb-8" />
 
               {/* TEXTO */}
-              <p className="text-center text-gray-300 italic leading-loose text-xl">
+              <p
+                className="
+                  text-center
+                  text-gray-300
+                  italic
+
+                  leading-relaxed
+                  sm:leading-loose
+
+                  text-base
+                  sm:text-xl
+                "
+              >
                 {cartas[cartaSelecionada].previa}
               </p>
 
               {/* BOTÕES */}
-              <div className="flex flex-col gap-4 mt-12">
+              <div className="flex flex-col gap-4 mt-10 sm:mt-12">
 
                 <Link
 
@@ -683,6 +821,9 @@ export default function cartas() {
                     duration-300
 
                     shadow-[0_0_30px_rgba(255,192,203,0.3)]
+
+                    text-sm
+                    sm:text-base
                   "
                 >
 
@@ -705,6 +846,9 @@ export default function cartas() {
                     hover:bg-white/5
 
                     transition
+
+                    text-sm
+                    sm:text-base
                   "
                 >
 
