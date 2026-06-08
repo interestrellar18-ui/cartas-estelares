@@ -17,15 +17,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Cartas Estelares",
-  description: "Um universo feito de estrelas e memórias.",
-
-  manifest: "/manifest.json",
-
   icons: {
-    icon: "/icon192.png",
-    apple: "/icon192.png",
+    icon: "/icon.png",
+    apple: "/icon.png",
   },
 };
 
