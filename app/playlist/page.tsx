@@ -486,10 +486,10 @@ export default function PlaylistPage() {
 
               italic
               text-pink-100
-              font-serif
+              font-cinzel
             "
           >
-            nossos sons!
+            ★
           </h1>
         </div>
 
@@ -622,7 +622,7 @@ export default function PlaylistPage() {
                 lg:text-5xl
 
                 italic
-                font-serif
+                font-cinzel
 
                 leading-tight
 
@@ -850,7 +850,7 @@ export default function PlaylistPage() {
                       sm:text-2xl
 
                       italic
-                      font-serif
+                      font-cinzel
 
                       text-pink-100
 
