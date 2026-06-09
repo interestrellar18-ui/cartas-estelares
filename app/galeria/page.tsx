@@ -1,35 +1,13 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
-import { Music2, X } from "lucide-react";
 
 export default function Galeria() {
 
-  const [menuMusica, setMenuMusica] = useState(false);
-
-  const musicaPlayer = useRef<HTMLAudioElement | null>(null);
-
-  useEffect(() => {
-
-    return () => {
-
-      if (musicaPlayer.current) {
-
-        musicaPlayer.current.pause();
-
-        musicaPlayer.current.currentTime = 0;
-
-      }
-
-    };
-
-  }, []);
-
   // ✦ GALERIA
   const midias = [
-    
+
     {
       tipo: "video",
       arquivo: "/30deabril.mp4",
@@ -37,7 +15,7 @@ export default function Galeria() {
         "-Eu errei uma nota,\n mas aqui meu passatempo.\n 30 de abril de 2026",
       rotacao: "-rotate-1",
     },
-    
+
     {
       tipo: "video",
       arquivo: "/domquixote.mp4",
@@ -83,7 +61,7 @@ export default function Galeria() {
         "você leva sorrisos por onde passa.\n 06 de maio de 2026",
       rotacao: "-rotate-1",
     },
-   
+
     {
       tipo: "imagem",
       arquivo: "/melao.jpg",
@@ -118,63 +96,72 @@ export default function Galeria() {
     {
       tipo: "video",
       arquivo: "/passarodefogo.mp4",
-      legenda: "um pedaço do tempo que\n eu quis guardar pra sempre\n 25 de maio de 2026",
+      legenda:
+        "um pedaço do tempo que\n eu quis guardar pra sempre\n 25 de maio de 2026",
       rotacao: "-rotate-2",
-    }, 
-    
+    },
+
     {
       tipo: "imagem",
       arquivo: "/tokverde.jpg",
-      legenda: "Me levou na cafeteria\n porque eu estava triste \n 27 de maio de 2026",
+      legenda:
+        "Me levou na cafeteria\n porque eu estava triste \n 27 de maio de 2026",
       rotacao: "rotate-1",
     },
 
     {
       tipo: "imagem",
       arquivo: "/strelinhas.jpg",
-      legenda: "as pequenas estrelas que nasceram entre nós ✦\n 27 de maio de 2026",
+      legenda:
+        "as pequenas estrelas que nasceram entre nós ✦\n 27 de maio de 2026",
       rotacao: "-rotate-1",
     },
 
     {
       tipo: "imagem",
       arquivo: "/usfoto1.jpg",
-      legenda: "31 de maio de 2026\n Nossa primeira foto juntos.",
+      legenda:
+        "31 de maio de 2026\n Nossa primeira foto juntos.",
       rotacao: "rotate-2",
     },
 
     {
       tipo: "imagem",
       arquivo: "/feliz.jpg",
-      legenda: "Seu sorriso clareia o mais cinza dos dias\n01 de junho de 2026",
+      legenda:
+        "Seu sorriso clareia o mais cinza dos dias\n01 de junho de 2026",
       rotacao: "rotate-1",
     },
 
-     {
+    {
       tipo: "imagem",
       arquivo: "/casaldepassaro.jpg",
-      legenda: "Os pássaros veem a gente\n01 de junho de 2026",
+      legenda:
+        "Os pássaros veem a gente\n01 de junho de 2026",
       rotacao: "rotate-2",
     },
 
     {
       tipo: "imagem",
       arquivo: "/nos1.jpeg",
-      legenda: "nós dois existindo no mesmo universo\n 02 de junho de 2026",
+      legenda:
+        "nós dois existindo no mesmo universo\n 02 de junho de 2026",
       rotacao: "rotate-1",
     },
 
     {
       tipo: "imagem",
       arquivo: "/sorriso.jpeg",
-      legenda: "o teu sorriso muda a gravidade do mundo\n 02 de junho de 2026",
+      legenda:
+        "o teu sorriso muda a gravidade do mundo\n 02 de junho de 2026",
       rotacao: "-rotate-2",
     },
 
     {
       tipo: "imagem",
       arquivo: "/nosdois.jpeg",
-      legenda: "e no fim de tudo, ainda era você\n 02 de junho de 2026",
+      legenda:
+        "e no fim de tudo, ainda era você\n 02 de junho de 2026",
       rotacao: "rotate-1",
     },
 
@@ -193,231 +180,7 @@ export default function Galeria() {
       rotacao: "rotate-2",
     },
 
-
   ];
-
-  const playlist = [
-
-    {
-  nome: "Se Tiver Que Ser Na Bala, Vai - Vanguart",
-  arquivo: "/vanguart.mp3",
-},
-
-{
-  nome: "Algo Parecido - Skank",
-  arquivo: "/algoparecido.mp3",
-},
-
-{
-  nome: "Só Nós Dois - Tim Bernardes",
-  arquivo: "/timbernardes.mp3",
-},
-
-{
-  nome: "Sentimental - Los Hermanos",
-  arquivo: "/sentimental.mp3",
-},
-
-{
-  nome: "Fingi Na Hora De Rir - Los Hermanos",
-  arquivo: "/finginahoraderir.mp3",
-},
-
-{
-  nome: "1932 - Pullovers",
-  arquivo: "/pullovers.mp3",
-},
-
-{
-  nome: "Último Romance - Los Hermanos",
-  arquivo: "/ultimoromance.mp3",
-},
-
-{
-  nome: "Linha Do Equador - Djavan",
-  arquivo: "/linhadoequador.mp3",
-},
-
-{
-  nome: "Lilás - Djavan",
-  arquivo: "/lilas.mp3",
-},
-
-{
-  nome: "Oceano - Djavan",
-  arquivo: "/oceano.mp3",
-},
-
-{
-  nome: "3x4 - Engenheiros Do Hawaii",
-  arquivo: "/3x4.mp3",
-},
-
-{
-  nome: "Todas As Canções São De Amor - Pullovers",
-  arquivo: "/todasascancoessaodeamor.mp3",
-},
-
-{
-  nome: "Meu Amor - O Grilo",
-  arquivo: "/meuamor.mp3",
-},
-
-{
-  nome: "Pra Você Gostar De Mim - O Grilo",
-  arquivo: "/pravocegostardemim.mp3",
-},
-
-{
-  nome: "Gostar Só Dela - Selvagens À Procura De Lei",
-  arquivo: "/gostarsodela.mp3",
-},
-
-{
-  nome: "Enquanto Eu Passar Na Sua Rua - Selvagens À Procura De Lei",
-  arquivo: "/enquantoeupassarnasuarua.mp3",
-},
-
-{
-  nome: "Retrato Para Iaiá - Los Hermanos",
-  arquivo: "/iaia.mp3",
-},
-
-{
-  nome: "Lábia - Jão",
-  arquivo: "/labia.mp3",
-},
-
-{
-  nome: "Alinhamento Milenar - Jão",
-  arquivo: "/alinhamentomilenar.mp3",
-},
-
-{
-  nome: "Pensando Em Ti - Nelson Gonçalves",
-  arquivo: "/pensandoemti.mp3",
-},
-
-{
-  nome: "Me Lambe - Jão",
-  arquivo: "/melambe.mp3",
-},
-
-{
-  nome: "Serenata Existencialista - O Grilo",
-  arquivo: "/serenataexistencialista.mp3",
-},
-
-{
-  nome: "Eu Te Amo - Lagum",
-  arquivo: "/euteamo.mp3",
-},
-
-{
-  nome: "Sombra No Sol - O Grilo",
-  arquivo: "/sombranosol.mp3",
-},
-
-{
-  nome: "Pelo Gosto Que As Notas Deixam Na Boca - O Grilo",
-  arquivo: "/pelogostoqueasnotasdeixamnaboca.mp3",
-},
-
-{
-  nome: "BB (Garupa De Moto Amarela) - Tim Bernardes",
-  arquivo: "/bebe.mp3",
-},
-
-{
-  nome: "Interestelar - Mulamba",
-  arquivo: "/mulamba.mp3",
-},
-
-{
-  nome: "Ciúmes - Venere Vai Venus",
-  arquivo: "/ciume.mp3",
-},
-
-{
-  nome: "A Vida Tem Dessas Coisas - Ritche",
-  arquivo: "/avidatemdessascoisas.mp3",
-},
-
-{
-  nome: "Anjos - Venere Vai Vênus",
-  arquivo: "/anjos.mp3",
-},
-
-{
-  nome: "Arriadin Por Tu - João Gomes",
-  arquivo: "/arriadinportu.mp3",
-},
-
-{
-  nome: "Avatar - Bê Vieira",
-  arquivo: "/avatar.mp3",
-},
-
-{
-  nome: "Enchanted - Taylor Swift",
-  arquivo: "/enchanted.mp3",
-},
-
-{
-  nome: "Entre Nós Dois - NX Zero",
-  arquivo: "/entrenosdois.mp3",
-},
-
-{
-  nome: "Entupir de Borboletas - Scatolove",
-  arquivo: "/entupirdeborboletas.mp3",
-},
-
-{
-  nome: "Inbox - Scatolove",
-  arquivo: "/inbox.mp3",
-},
-
-{
-  nome: "Line Without a Hook - Ricky Montgomery",
-  arquivo: "/linewithoutahook.mp3",
-},
-
-{
-  nome: "Onde Mora Deus - Rodrigo Alarcon",
-  arquivo: "/ondemoradeus.mp3",
-},
-
-{
-  nome: "Outro Lugar - Detonautas",
-  arquivo: "/outrolugar.mp3",
-},
-
-{
-  nome: "Quando o Sol Se For - Detonautas",
-  arquivo: "/detonautas.mp3",
-},
-
-{
-  nome: "Sparks Fly - Taylor Swift",
-  arquivo: "/sparksfly.mp3",
-},
-
-  ];
-
-  const tocarMusica = (arquivo: string) => {
-
-    musicaPlayer.current?.pause();
-
-    musicaPlayer.current = new Audio(arquivo);
-
-    musicaPlayer.current.volume = 0.2;
-
-    musicaPlayer.current.loop = true;
-
-    musicaPlayer.current.play().catch(() => {});
-
-  };
 
   return (
 
@@ -464,18 +227,6 @@ export default function Galeria() {
       <Link
         href="/cartas"
 
-        onClick={() => {
-
-          if (musicaPlayer.current) {
-
-            musicaPlayer.current.pause();
-
-            musicaPlayer.current.currentTime = 0;
-
-          }
-
-        }}
-
         className="
           fixed
           top-5
@@ -504,47 +255,6 @@ export default function Galeria() {
         voltar ✦
       </Link>
 
-      {/* BOTÃO MÚSICA */}
-      <button
-        onClick={() => setMenuMusica(true)}
-
-        className="
-          fixed
-          top-5
-          right-5
-
-          z-50
-
-          flex
-          items-center
-          gap-2
-
-          px-4
-          py-2
-
-          rounded-full
-
-          border
-          border-pink-200/20
-
-          bg-[#090d1f]/40
-          backdrop-blur-xl
-
-          text-pink-100
-          italic
-
-          hover:bg-pink-200/10
-
-          transition
-        "
-      >
-
-        <Music2 size={18} />
-
-        trilha sonora
-
-      </button>
-
       {/* TÍTULO */}
       <div className="relative z-10 text-center pt-24 mb-14">
 
@@ -559,316 +269,177 @@ export default function Galeria() {
       </div>
 
       {/* GALERIA */}
-<div className="relative z-10 px-4 md:px-10 pb-28">
+      <div className="relative z-10 px-4 md:px-8 xl:px-14 pb-28">
 
-  <div className="flex flex-col gap-20 items-center">
-
-    {midias.map((midia, index) => (
-
-      <motion.div
-        key={index}
-
-        initial={{
-          opacity: 0,
-          y: 80,
-        }}
-
-        whileInView={{
-          opacity: 1,
-          y: 0,
-        }}
-
-        transition={{
-          duration: 1,
-        }}
-
-        viewport={{
-          once: true,
-        }}
-
-        className={`
-          relative
-
-          inline-flex
-          flex-col
-          items-center
-
-          bg-[rgba(16,12,30,0.72)]
-          backdrop-blur-2xl
-
-          border
-          border-pink-200/10
-
-          rounded-[38px]
-
-          p-4
-          md:p-5
-
-          shadow-[0_0_80px_rgba(255,192,203,0.08)]
-
-          ${midia.rotacao}
-        `}
-      >
-
-        {/* BRILHO */}
         <div
           className="
-            absolute
-            inset-0
+            grid
 
-            rounded-[38px]
+            grid-cols-1
+            sm:grid-cols-2
+            xl:grid-cols-4
 
-            bg-gradient-to-b
-            from-white/[0.03]
-            to-transparent
+            gap-10
+            xl:gap-12
 
-            pointer-events-none
-          "
-        />
-
-        {/* MÍDIA */}
-        <div
-          className="
-            relative
-
-            overflow-hidden
-
-            rounded-[28px]
-
-            bg-[#0b0718]
-
-            flex
-            items-center
-            justify-center
+            items-start
           "
         >
 
-          {midia.tipo === "imagem" ? (
+          {midias.map((midia, index) => (
 
-            <img
-              src={midia.arquivo}
-              alt=""
+            <motion.div
+              key={index}
 
-              className="
-                block
+              initial={{
+                opacity: 0,
+                y: 80,
+              }}
 
-                w-auto
-                h-auto
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
 
-                max-w-[88vw]
-                md:max-w-[720px]
+              transition={{
+                duration: 1,
+              }}
 
-                max-h-[78vh]
+              viewport={{
+                once: true,
+              }}
 
-                object-contain
+              className={`
+                relative
 
-                rounded-[24px]
-              "
-            />
+                w-full
 
-          ) : (
+                bg-[rgba(16,12,30,0.72)]
+                backdrop-blur-2xl
 
-            <video
-              src={midia.arquivo}
+                border
+                border-pink-200/10
 
-              controls
+                rounded-[32px]
 
-              className="
-                block
+                p-3
 
-                w-auto
-                h-auto
+                shadow-[0_0_60px_rgba(255,192,203,0.08)]
 
-                max-w-[88vw]
-                md:max-w-[720px]
+                transition-all
+                duration-500
 
-                max-h-[78vh]
+                hover:scale-[1.02]
 
-                object-contain
+                ${midia.rotacao}
+              `}
+            >
 
-                rounded-[24px]
+              {/* BRILHO */}
+              <div
+                className="
+                  absolute
+                  inset-0
 
-                bg-black
-              "
-            />
+                  rounded-[32px]
 
-          )}
+                  bg-gradient-to-b
+                  from-white/[0.03]
+                  to-transparent
+
+                  pointer-events-none
+                "
+              />
+
+              {/* MIDIA */}
+              <div
+                className="
+                  relative
+
+                  overflow-hidden
+
+                  rounded-[24px]
+
+                  bg-[#0b0718]
+
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+
+                {midia.tipo === "imagem" ? (
+
+                  <img
+                    src={midia.arquivo}
+                    alt=""
+
+                    className="
+                      w-full
+
+                      h-auto
+
+                      object-cover
+
+                      rounded-[22px]
+                    "
+                  />
+
+                ) : (
+
+                  <video
+                    src={midia.arquivo}
+
+                    controls
+
+                    className="
+                      w-full
+
+                      h-auto
+
+                      object-cover
+
+                      rounded-[22px]
+
+                      bg-black
+                    "
+                  />
+
+                )}
+
+              </div>
+
+              {/* LEGENDA */}
+              <p
+                className="
+                  mt-5
+
+                  text-center
+
+                  text-pink-100/90
+
+                  italic
+
+                  text-sm
+                  md:text-base
+
+                  leading-relaxed
+
+                  whitespace-pre-line
+
+                  font-cinzel
+                "
+              >
+                {midia.legenda}
+              </p>
+
+            </motion.div>
+
+          ))}
 
         </div>
 
-        {/* LEGENDA */}
-        <p
-          className="
-            mt-6
-
-            max-w-[85vw]
-            md:max-w-[650px]
-
-            text-center
-
-            text-pink-100/90
-
-            italic
-
-            text-sm
-            md:text-xl
-
-            leading-relaxed
-
-            whitespace-pre-line
-
-            font-cinzel
-          "
-        >
-          {midia.legenda}
-        </p>
-
-      </motion.div>
-
-    ))}
-
-  </div>
-
       </div>
-
-      {/* MENU MÚSICA */}
-      <AnimatePresence>
-
-        {menuMusica && (
-
-          <motion.div
-
-            initial={{
-              x: 400,
-            }}
-
-            animate={{
-              x: 0,
-            }}
-
-            exit={{
-              x: 400,
-            }}
-
-            transition={{
-              duration: 0.5,
-            }}
-
-            className="
-              fixed
-              top-0
-              right-0
-
-              w-[320px]
-              h-screen
-
-              overflow-y-auto
-
-              bg-[#090d1f]/95
-              backdrop-blur-2xl
-
-              border-l
-              border-pink-200/10
-
-              z-[999]
-
-              p-8
-            "
-          >
-
-            {/* FECHAR */}
-            <button
-              onClick={() => setMenuMusica(false)}
-              className="text-pink-100 mb-10"
-            >
-              <X />
-            </button>
-
-            {/* TÍTULO */}
-            <h2 className="text-3xl font-cinzel text-pink-100 italic mb-8">
-              Trilha Sonora
-            </h2>
-
-            {/* PLAYLIST */}
-            <div className="flex flex-col gap-4">
-
-              {playlist.map((musica, index) => (
-
-                <button
-                  key={index}
-
-                  onClick={() => tocarMusica(musica.arquivo)}
-
-                  className="
-                    text-left
-
-                    px-5
-                    py-4
-
-                    rounded-2xl
-
-                    bg-white/5
-
-                    hover:bg-pink-200/10
-
-                    transition
-
-                    text-pink-100
-                    italic
-                  "
-                >
-
-                  {musica.nome}
-
-                </button>
-
-              ))}
-
-              {/* SILÊNCIO */}
-              <button
-                onClick={() => {
-
-                  if (musicaPlayer.current) {
-
-                    musicaPlayer.current.pause();
-
-                    musicaPlayer.current.currentTime = 0;
-
-                    musicaPlayer.current = null;
-
-                  }
-
-                }}
-
-                className="
-                  mt-6
-
-                  px-5
-                  py-4
-
-                  rounded-2xl
-
-                  border
-                  border-pink-200/10
-
-                  text-gray-300
-                  italic
-
-                  hover:bg-white/5
-
-                  transition
-                "
-              >
-                silêncio cósmico ✦
-              </button>
-
-            </div>
-
-          </motion.div>
-
-        )}
-
-      </AnimatePresence>
 
     </main>
 
