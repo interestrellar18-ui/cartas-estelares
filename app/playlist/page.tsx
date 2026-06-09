@@ -299,6 +299,137 @@ export default function PlaylistPage() {
   icone: "✦",
   cor: "from-fuchsia-200/20 to-rose-300/10",
 },
+
+{
+  nome: "A Vida Tem Dessas Coisas",
+  artista: "Ritchie",
+  arquivo: "/avidatemdessascoisas.mp3",
+  frase:
+    "Me perdi no teu caminho, Me encontrei falando sozinho, Sigo sempre sem destino, Pra te encontrar",
+  icone: "☾",
+  cor: "from-indigo-200/20 to-violet-300/10",
+},
+
+{
+  nome: "Anjos",
+  artista: "Venere Vai Vênus",
+  arquivo: "/anjos.mp3",
+  frase:
+    "E eu nunca te beijei, rezei e desejei, Te segurar, Sinto como os anjos que te ensinaram o canto, E o amor, oh-oh",
+  icone: "✦",
+  cor: "from-sky-200/20 to-cyan-300/10",
+},
+
+{
+  nome: "Arriadin Por Tu",
+  artista: "João Gomes",
+  arquivo: "/arriadinportu.mp3",
+  frase:
+    "Era só pra ficar e eu fiquei xonadin, Nas curvas do teu sorriso me perdi, Não era pra viciar, viciei, tô aqui, Tô dependente de você, e aí?",
+  icone: "❥",
+  cor: "from-amber-200/20 to-orange-300/10",
+},
+
+{
+  nome: "Avatar",
+  artista: "Bê Vieira",
+  arquivo: "/avatar.mp3",
+  frase:
+    "Pior passar vontade do que se arrepender, Problema do futuro a gente vai resolver, Me chama de namorado, por favor, Só me chama de namorado, por favor",
+  icone: "☁",
+  cor: "from-fuchsia-200/20 to-pink-300/10",
+},
+
+{
+  nome: "Enchanted",
+  artista: "Taylor Swift",
+  arquivo: "/enchanted.mp3",
+  frase:
+    "Please, don't be in love with someone else, Please, don't have somebody waiting on you",
+  icone: "✧",
+  cor: "from-purple-200/20 to-pink-300/10",
+},
+
+{
+  nome: "Entre Nós Dois",
+  artista: "NX Zero",
+  arquivo: "/entrenosdois.mp3",
+  frase:
+    "Não tem como esconder meu desejo (de te ter de novo), Tente ver em meus olhos o que sinto (vai além das palavras), Preciso te dizer",
+  icone: "♡",
+  cor: "from-blue-200/20 to-indigo-300/10",
+},
+
+{
+  nome: "Entupir de Borboletas",
+  artista: "Scatolove",
+  arquivo: "/entupirdeborboletas.mp3",
+  frase:
+    "Eu fico inerte, pois tu me aquece, Eu quero alguma coisa, Que diminua a distância entre eu e você",
+  icone: "🦋",
+  cor: "from-emerald-200/20 to-teal-300/10",
+},
+
+{
+  nome: "Inbox",
+  artista: "Scatolove",
+  arquivo: "/inbox.mp3",
+  frase:
+    "Eu vou ter desculpas pra, Te trancar em casa comigo, Casa comigo? E Deixa o mundo queimar de mansinho",
+  icone: "✉",
+  cor: "from-rose-200/20 to-red-300/10",
+},
+
+{
+  nome: "Line Without a Hook",
+  artista: "Ricky Montgomery",
+  arquivo: "/linewithoutahook.mp3",
+  frase:
+    "If I went and hurt my body, baby, Would you love me the same?",
+  icone: "⚘",
+  cor: "from-stone-200/20 to-zinc-300/10",
+},
+
+{
+  nome: "Onde Mora Deus",
+  artista: "Rodrigo Alarcon",
+  arquivo: "/ondemoradeus.mp3",
+  frase:
+    "É que eu vi Deus quando olhei nos olhos seus, Fiquei com medo e resolvi me afastar, Mas tudo mudou, E hoje eu aprendi rezar",
+  icone: "☼",
+  cor: "from-yellow-200/20 to-amber-300/10",
+},
+
+{
+  nome: "Outro Lugar",
+  artista: "Detonautas",
+  arquivo: "/outrolugar.mp3",
+  frase:
+    "Não te quero assim tão longe, Tanto quanto o céu do mar, Quero ter você mais perto, Certo, pronto pra te amar",
+  icone: "☄",
+  cor: "from-slate-200/20 to-gray-300/10",
+},
+
+{
+  nome: "Quando o Sol Se For",
+  artista: "Detonautas",
+  arquivo: "/quandoosolsefor.mp3",
+  frase:
+    "Quando o Sol se for, A luz indicará você pra mim",
+  icone: "☀",
+  cor: "from-orange-200/20 to-yellow-300/10",
+},
+
+{
+  nome: "Sparks Fly",
+  artista: "Taylor Swift",
+  arquivo: "/sparksfly.mp3",
+  frase:
+    "Drop everything now, meet me in the pouring rain, kiss me on the sidewalk, take away thhe pain",
+  icone: "⚡",
+  cor: "from-pink-200/20 to-purple-300/10",
+},
+
   ];
 
   const musicaAtual = playlist[indiceAtual];
