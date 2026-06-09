@@ -50,10 +50,10 @@ titulo: "Estrelas para Você",
 destinatario: "Felipe", 
 
 // MÚSICA 
-musica: "Se tiver que ser na bala, vai - Vanguart", 
-artista: "Vanguart", 
+musica: "Interestelar", 
+artista: "Mulamba", 
 // ARQUIVO DA MÚSICA 
-arquivoMusica: "/vanguart.mp3", 
+arquivoMusica: "/mulamba.mp3", 
 
 texto: "Eu sei que existiram histórias antes de mim.\nHistórias longas, intensas, daquelas que mudam o jeito de alguém enxergar o amor.\nE às vezes eu penso no peso disso tudo.\n\nPenso em como deve ser difícil chegar depois de dez anos.\nDepois de alguém que te atravessou tão fundo que até hoje mora em partes suas que talvez você nem perceba.\n\nE eu tenho medo.\nNão medo dela.\nNão medo do passado.\n\nTenho medo de ser pequena demais diante de tudo isso.\n\nPorque eu sei que eu não sou esse amor de uma década.\nNão sou a paixão que apertava teu peito até faltar ar.\nNão sou a pessoa que escreveu capítulos inteiros da tua vida.\n\nMas, meu Deus… como eu queria importar assim.\n\nQueria ser mais do que uma fase tranquila depois do caos.\nMais do que alguém passageira enquanto você tenta reorganizar os sentimentos.\nQueria ser lembrança bonita, abrigo, permanência.\n\nQueria que quando você pensasse no futuro, meu rosto aparecesse sem esforço.\n\nE talvez a pior parte seja que você nunca me deu motivos concretos pra sentir isso.\nÉ só o jeito que o passado dos outros às vezes faz a gente se sentir atrasada numa corrida que nem deveria existir.\n\nMas eu queria que você soubesse:\neu não quero apagar ninguém da tua história.\nNão quero ocupar lugar nenhum à força.\n\nSó queria descobrir se existe espaço pra mim aí dentro…\nde um jeito verdadeiro.\nDe um jeito que fique.",
 
@@ -95,7 +95,7 @@ destinatario: "Felipe",
 musica: "Só nós dois.", 
 artista: "Tim Bernardes",
  
-arquivoMusica: "/sonosdois.mp3",
+arquivoMusica: "/timbernardes.mp3",
 
 texto: "Se o mundo acabasse agora,\neu acho que nem iria perceber direito.\n\nPorque você tá sorrindo.\nE teu sorriso tem esse jeito absurdo\nde fazer o caos parecer distante.\n\nAs coisas poderiam estar desmoronando,\nos prédios caindo,\no céu rachando ao meio,\ne ainda assim,\ncom tua mão na minha,\neu continuaria achando a vida bonita.\n\nTalvez gostar seja isso:\nencontrar alguém que silencie o fim do mundo\nsó por existir perto.\n\nEntão, se tudo tiver mesmo prestes a acabar,\nnão me promete eternidade.\n\nSó sorri pra mim mais uma vez.\nPorque tem um tipo de paz\nque eu só conheço\nquando teus olhos encontram os meus.", 
 
