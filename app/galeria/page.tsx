@@ -71,13 +71,6 @@ export default function Galeria() {
 
     {
       tipo: "imagem",
-      arquivo: "/tokverde.jpg",
-      legenda: "Me levou na cafeteria\n porque eu estava triste \n 04 de maio de 2026",
-      rotacao: "rotate-1",
-    },
-
-    {
-      tipo: "imagem",
       arquivo: "/coracao.jpg",
       legenda: "Histologia do dia que te conheci\n 05 de maio de 2026",
       rotacao: "rotate-1",
@@ -127,6 +120,13 @@ export default function Galeria() {
       arquivo: "/passarodefogo.mp4",
       legenda: "um pedaço do tempo que\n eu quis guardar pra sempre\n 25 de maio de 2026",
       rotacao: "-rotate-2",
+    }, 
+    
+    {
+      tipo: "imagem",
+      arquivo: "/tokverde.jpg",
+      legenda: "Me levou na cafeteria\n porque eu estava triste \n 27 de maio de 2026",
+      rotacao: "rotate-1",
     },
 
     {
@@ -210,7 +210,7 @@ export default function Galeria() {
 
 {
   nome: "Só Nós Dois - Tim Bernardes",
-  arquivo: "/sonosdois.mp3",
+  arquivo: "/timbernardes.mp3",
 },
 
 {
@@ -330,7 +330,7 @@ export default function Galeria() {
 
 {
   nome: "Interestelar - Mulamba",
-  arquivo: "/interestelar.mp3",
+  arquivo: "/mulamba.mp3",
 },
 
 {

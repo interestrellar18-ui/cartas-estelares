@@ -153,7 +153,7 @@ export default function PlaylistPage() {
 {
   nome: "Interestelar",
   artista: "Mulamba",
-  arquivo: "/interestelar.mp3",
+  arquivo: "/mulamba.mp3",
   frase:
     "Interestelar é codinome que eu vou te dar, caso eu resolva lhe dedicar uma canção",
   icone: "✷",
@@ -283,7 +283,7 @@ export default function PlaylistPage() {
 {
   nome: "Só Nós Dois",
   artista: "Tim Bernardes",
-  arquivo: "/sonosdois.mp3",
+  arquivo: "/timbernardes.mp3",
   frase:
     "Ninguém te imaginaria, Ninguém sonharia, Alguém como você, Se hoje a realidade, É bem maior que o sonho, Eu já sei porque",
   icone: "∞",
