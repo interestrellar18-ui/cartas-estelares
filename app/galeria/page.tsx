@@ -338,6 +338,75 @@ export default function Galeria() {
   arquivo: "/ciume.mp3",
 },
 
+{
+  nome: "A Vida Tem Dessas Coisas - Ritche",
+  arquivo: "/avidatemdessascoisas.mp3",
+},
+
+{
+  nome: "Anjos - Venere Vai Vênus",
+  arquivo: "/anjos.mp3",
+},
+
+{
+  nome: "Arriadin Por Tu - João Gomes",
+  arquivo: "/arriadinportu.mp3",
+},
+
+{
+  nome: "Avatar - Bê Vieira",
+  arquivo: "/avatar.mp3",
+},
+
+{
+  nome: "Enchanted - Taylor Swift",
+  arquivo: "/enchanted.mp3",
+},
+
+{
+  nome: "Entre Nós Dois - NX Zero",
+  arquivo: "/entrenosdois.mp3",
+},
+
+{
+  nome: "Entupir de Borboletas - Scatolove",
+  arquivo: "/entupirdeborboletas.mp3",
+},
+
+{
+  nome: "Inbox - Scatolove",
+  arquivo: "/inbox.mp3",
+},
+
+{
+  nome: "Line Without a Hook - Ricky Montgomery",
+  arquivo: "/linewithoutahook.mp3",
+},
+
+{
+  nome: "Onde Mora Deus - Rodrigo Alarcon",
+  arquivo: "/ondemoradeus.mp3",
+},
+
+{
+  nome: "Outro Lugar - Detonautas",
+  arquivo: "/outrolugar.mp3",
+},
+
+{
+  nome: "Quando o Sol Se For - Detonautas",
+  arquivo: "/detonautas.mp3",
+},
+
+{
+  nome: "Sparks Fly - Taylor Swift",
+  arquivo: "/sparksfly.mp3",
+},
+
+{
+  nome: "When I Look At You - Miley Cyrus",
+  arquivo: "/whenilookatyou.mp3",
+},
   ];
 
   const tocarMusica = (arquivo: string) => {

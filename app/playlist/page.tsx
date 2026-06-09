@@ -413,7 +413,7 @@ export default function PlaylistPage() {
 {
   nome: "Quando o Sol Se For",
   artista: "Detonautas",
-  arquivo: "/quandoosolsefor.mp3",
+  arquivo: "/detonautas.mp3",
   frase:
     "Quando o Sol se for, A luz indicará você pra mim",
   icone: "☀",
