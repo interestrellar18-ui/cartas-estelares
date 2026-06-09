@@ -403,10 +403,6 @@ export default function Galeria() {
   arquivo: "/sparksfly.mp3",
 },
 
-{
-  nome: "When I Look At You - Miley Cyrus",
-  arquivo: "/whenilookatyou.mp3",
-},
   ];
 
   const tocarMusica = (arquivo: string) => {
