@@ -430,6 +430,17 @@ export default function PlaylistPage() {
   cor: "from-pink-200/20 to-purple-300/10",
 },
 
+{
+  nome: "Passarela",
+  artista: "Léo Middea",
+  arquivo: "/passarela.mp3",
+  frase:
+    "E eu vou esperar, Quanto for preciso, Pra te perguntar, Se tu quer dar outro, Rolê comigo",
+  icone: "∞",
+  cor: "from-orange-200/20 to-yellow-300/10",
+},
+
+
   ];
 
   const musicaAtual = playlist[indiceAtual];
