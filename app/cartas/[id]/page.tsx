@@ -170,6 +170,29 @@ selo2: "",
 foto1: "", 
 foto2: "/nosdois.jpeg",
  }, 
+
+ {
+  titulo: "Paixão ardente como supernova",
+  destinatario: "Felipe Alves",
+
+  musica: "Alinhamento Milenar",
+  artista: "Jão",
+
+  arquivoMusica: "/alinhamentomilenar.mp3",
+
+  texto:
+    "Você é minha pessoa favorita, e hoje eu queria tirar um tempinho para te lembrar o quanto você é especial para mim e o quanto sou feliz por ter encontrado você.\n\nÉ engraçado pensar que eu te vi pela primeira vez em 21 de julho de 2025, sem imaginar que, algum tempo depois, você se tornaria alguém tão importante na minha vida. Mas foi a partir do dia 30 de abril de 2026 que eu tive a oportunidade de conhecer de verdade quem você é, e desde então eu só consigo admirar cada vez mais o seu coração.\n\nEu acho lindo o jeito que você cuida das pessoas, a forma como você tenta ajudar, mesmo quando você também precisa de cuidado. Na forma como você espera eu ficar bem antes de tentar resolver qualquer coisa. Na forma como você se importa de verdade.\n\nVocê tem um coração muito raro. Mesmo depois de se machucar, você continua escolhendo ser uma pessoa boa. Mesmo quando seria mais fácil se fechar, você continua oferecendo carinho, apoio e gentileza. E eu admiro muito isso em você.\n\nDesde aquele primeiro dia em que te vi acolhendo as pessoas, com aquele sorriso bonito que fazia todo mundo se sentir menos perdido, eu já tinha uma admiração por você. Com o tempo, ela só cresceu, porque eu fui descobrindo que por trás daquele sorriso existe alguém extremamente gentil, prestativo, empático e cheio de amor para oferecer.\n\nEu lembro de tantas vezes em que você esteve comigo. Das horas que você passou me ajudando sem precisar, dos momentos em que você me ouviu, das vezes em que você conseguiu transformar dias difíceis em dias mais leves. Você tem um jeito muito bonito de fazer as pessoas se sentirem cuidadas, e eu sou muito grata por sentir isso vindo de você.\n\nVocê foi, sem dúvida, uma das melhores coisas que me aconteceram esse ano. Você chegou de um jeito inesperado e trouxe uma felicidade que eu não sabia que estava precisando. Você me faz sorrir, me faz sentir acolhida, me faz sentir importante e, principalmente, me faz sentir muito bem sendo quem eu sou, faz eu sentir que nenhum problema é grande demais se eu estiver segurando sua mão.\n\nEu também quero que você saiba que eu respeito a sua história, tudo que você viveu, tudo que te trouxe até aqui e todas as coisas que fazem você ser quem é hoje. Eu nunca quero apressar seus sentimentos ou ignorar o seu tempo, porque eu sei que cada pessoa carrega suas próprias cicatrizes e seus próprios processos.\n\nMas quero que você saiba uma coisa: por você, vale a pena esperar. Vale a pena ter paciência, vale a pena construir aos poucos, vale a pena deixar as coisas acontecerem da forma mais bonita e verdadeira possível. Eu vou estar aqui, respeitando o seu tempo, torcendo por você e querendo ver você feliz, porque antes de qualquer coisa eu admiro a pessoa que você é.\n\nEu quero que você saiba que esse cuidado é recíproco. Que eu também quero ser esse lugar seguro para você. Quero estar aqui para comemorar suas conquistas, ouvir seus medos, dividir seus dias difíceis e lembrar você, sempre, da pessoa incrível que você é.\n\nEu espero que você nunca duvide do quanto eu gosto de você, do quanto você é admirado por mim e do quanto a sua existência faz diferença na vida das pessoas que têm a sorte de conhecer você. Obrigada por ser você. Obrigada por me tratar com tanto carinho, por me fazer tão feliz e por deixar eu conhecer esse coração lindo que existe aí dentro.\n\nEu gosto muito de fazer parte da sua vida, e espero poder continuar fazendo isso por muito, muito tempo.",
+
+  frase:
+    "O humano coração com mais verdade...Amo-te como amigo e como amante, Numa sempre diversa realidade.",
+
+  selo1: "",
+  selo2: "",
+
+  foto1: "/amor.jpg",
+  foto2: "/curacao.jpg",
+},
+
 ];
 
   const carta = cartas[Number(params.id)];

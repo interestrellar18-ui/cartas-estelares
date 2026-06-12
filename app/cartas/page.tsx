@@ -127,6 +127,13 @@ export default function cartas() {
         "Tem pessoas que não apagam nossas inseguranças; elas só seguram nossa mão até a gente parar de acreditar nelas.",
     },
 
+    
+{
+  titulo: "Dia 12 de Junho",
+  previa: "E de te amar assim, muito e amiúde, é que um dia em teu corpo, de repente, hei de morrer de amar mais do que pude. -Vinicíus de Moraes",
+},
+
+
   ];
 
   // POSIÇÕES DAS ESTRELAS
@@ -143,6 +150,8 @@ export default function cartas() {
     { top: "66%", left: "52%" },
 
     { top: "79%", left: "82%" },
+
+    { top: "24%", left: "42%" },
 
   ];
 
