@@ -180,6 +180,13 @@ export default function Galeria() {
       rotacao: "rotate-2",
     },
 
+    {
+      tipo: "imagem",
+      arquivo: "/12junho.jpeg",
+      legenda: "Datas antigas, lembranças passadas, dias novos, memórias renovadas\n12 de junho de 2026",
+      rotacao: "rotate-1",
+    },
+
   ];
 
   return (
