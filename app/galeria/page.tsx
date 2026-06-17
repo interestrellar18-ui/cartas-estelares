@@ -182,8 +182,29 @@ export default function Galeria() {
 
     {
       tipo: "imagem",
-      arquivo: "/12junho.jpeg",
+      arquivo: "/junho.jpeg",
       legenda: "Datas antigas, lembranças passadas, dias novos, memórias renovadas\n12 de junho de 2026",
+      rotacao: "rotate-1",
+    },
+
+    {
+      tipo: "video",
+      arquivo: "/kissme.mp4",
+      legenda: "Me beije, Sob o crepúsculo enevoado, Me conduza, Pelo chão iluminado pela Lua\n15 de junho de 2026",
+      rotacao: "rotate-2",
+    },
+
+    {
+      tipo: "video",
+      arquivo: "/temadenaoquerovervocetriste.mp4",
+      legenda: "Sente o céu e esse é o luar, Que eu quero ver no teu olhar, Eu só queria ter você pra mim\n15 de junho de 2026",
+      rotacao: "rotate-1",
+    },
+
+    {
+      tipo: "video",
+      arquivo: "/elvis.mp4",
+      legenda: "Você é minha pessoa favorita.\n15 de junho de 2026",
       rotacao: "rotate-1",
     },
 

@@ -440,6 +440,55 @@ export default function PlaylistPage() {
   cor: "from-orange-200/20 to-yellow-300/10",
 },
 
+{
+  nome: "Carinhoso",
+  artista: "Marisa Monte",
+  arquivo: "/carinhoso.mp3",
+  frase:
+    "Meu coração, não sei por quê, Bate feliz quando te vê, E os meus olhos ficam sorrindo",
+  icone: "♡",
+  cor: "from-emerald-200/20 to-teal-300/10",
+},
+
+{
+  nome: "Kiss me",
+  artista: "Sixpence None the Richer",
+  arquivo: "/kissme.mp3",
+  frase:
+    "Kiss me, beneath the milky twilight, Lead me out on the moonlit floor, Lift your open hand",
+  icone: "☾",
+  cor: "from-fuchsia-200/20 to-pink-300/10",
+},
+
+{
+  nome: "Fascinação",
+  artista: "Elis Regina",
+  arquivo: "/fascinacao.mp3",
+  frase:
+    "Os sonhos mais lindos sonhei, De quimeras mil, um castelo ergui",
+  icone: "☼",
+  cor: "from-orange-200/20 to-yellow-300/10",
+},
+
+{
+  nome: "Tema de Não Quero Ver Você Triste",
+  artista: "Marisa Monte",
+  arquivo: "/temamarisa.mp3",
+  frase:
+    "O que é que você tem? Conta pra mim, Não quero ver você triste assim, Não fique triste o mundo é bom, A felicidade até existe ",
+  icone: "❥",
+  cor: "from-amber-200/20 to-orange-300/10",
+},
+
+{
+  nome: "Can't Help Falling in Love",
+  artista: "Elvis Presley",
+  arquivo: "/canthelpfallinginlove.mp3",
+  frase:
+    "Shall I stay? Would it be a sin? If I can't help falling in love with you",
+  icone: "✧",
+  cor: "from-purple-200/20 to-pink-300/10",
+},
 
   ];
 
