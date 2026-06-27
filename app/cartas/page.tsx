@@ -133,6 +133,10 @@ export default function cartas() {
   previa: "E de te amar assim, muito e amiúde, é que um dia em teu corpo, de repente, hei de morrer de amar mais do que pude. -Vinicíus de Moraes",
 },
 
+    {
+  titulo: "Encanto",
+  previa: "Há olhares que atravessam a alma, presenças que o tempo não consegue apagar. Entre certezas e confusões, existe um sentimento que não sabe explicar…apenas sente.",
+},
 
   ];
 
@@ -152,6 +156,9 @@ export default function cartas() {
     { top: "79%", left: "82%" },
 
     { top: "24%", left: "42%" },
+
+         { top: "47%", left: "78%" },
+
 
   ];
 
