@@ -208,6 +208,30 @@ export default function Galeria() {
       rotacao: "rotate-1",
     },
 
+    {
+      tipo: "video",
+      arquivo: "/piano.mp4",
+      legenda: "um som de muitos passados e novos futuros\n25 de junho de 2026",
+      rotacao: "rotate-2",
+    },
+
+    {
+      tipo: "video",
+      arquivo: "/beautiful.mp4",
+      legenda: "You deserve me\n26 de junho de 2026",
+      rotacao: "rotate-1",
+    },
+
+    {
+      tipo: "video",
+      arquivo: "/rockwithyou.mp4",
+      legenda: "Tua voz é minha música favorita\n26 de junho de 2026",
+      rotacao: "rotate-2",
+    },
+
+
+
+
   ];
 
   return (

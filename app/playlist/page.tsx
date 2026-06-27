@@ -20,44 +20,15 @@ export default function PlaylistPage() {
   const [progresso, setProgresso] = useState(0);
 
  const playlist = [
-   {
-  nome: "Se Tiver Que Ser Na Bala, Vai",
-  artista: "Vanguart",
-  arquivo: "vanguart.mp3",
+ 
+ {
+  nome: "1932",
+  artista: "Pullovers",
+  arquivo: "/pullovers.mp3",
   frase:
-    "Não te opõe ao curso do rio, Prestidigitar a frustração, Tem dias que a vida é um ato de coragem.",
-  icone: "✧",
-  cor: "from-orange-200/20 to-amber-300/10",
-},
-
-{
-  nome: "Linha Do Equador",
-  artista: "Djavan",
-  arquivo: "/linhadoequador.mp3",
-  frase:
-    "Esse imenso, desmedido amor, vai além de seja o que for vai além de onde eu vou, do que sou, minha dor, minha linha do Equador.",
-  icone: "∿",
-  cor: "from-cyan-200/20 to-blue-400/10",
-},
-
-{
-  nome: "Lilás",
-  artista: "Djavan",
-  arquivo: "/lilas.mp3",
-  frase:
-    "Raio se libertou, clareou muito mais, Se encantou pela cor lilás, Prata na luz do amor, Céu azul!",
-  icone: "❀",
-  cor: "from-purple-200/20 to-pink-300/10",
-},
-
-{
-  nome: "Oceano",
-  artista: "Djavan",
-  arquivo: "/oceano.mp3",
-  frase:
-    "Amar é um deserto e seus temores, Vida que vai na sela dessas dores, Não sabe voltar, me dá teu calor",
-  icone: "⋆",
-  cor: "from-sky-200/20 to-cyan-400/10",
+    "Quando você sorriu, Me repartiu em antes e depois, Hoje eu me rendo, Rio, Mil novecentos e trinta e dois",
+  icone: "⊹",
+  cor: "from-stone-200/20 to-neutral-400/10",
 },
 
 {
@@ -71,6 +42,16 @@ export default function PlaylistPage() {
 },
 
 {
+  nome: "A Vida Tem Dessas Coisas",
+  artista: "Ritchie",
+  arquivo: "/avidatemdessascoisas.mp3",
+  frase:
+    "Me perdi no teu caminho, Me encontrei falando sozinho, Sigo sempre sem destino, Pra te encontrar",
+  icone: "☾",
+  cor: "from-indigo-200/20 to-violet-300/10",
+},
+
+{
   nome: "Alinhamento Milenar",
   artista: "Jão",
   arquivo: "/alinhamentomilenar.mp3",
@@ -78,186 +59,6 @@ export default function PlaylistPage() {
     "A gente tem um charme especial, Todo mundo quer parar pra ver, Cada festa, cada praia, Os rolês na madrugada a alma sempre sou eu e você",
   icone: "☄",
   cor: "from-indigo-300/20 to-violet-400/10",
-},
-
-{
-  nome: "Lábia",
-  artista: "Jão",
-  arquivo: "/labia.mp3",
-  frase:
-    "A gente tem um charme especial, Todo mundo quer parar pra ver, Cada festa, cada praia, Os rolês na madrugada a alma sempre sou eu e você",
-  icone: "✶",
-  cor: "from-red-200/20 to-rose-400/10",
-},
-
-{
-  nome: "Me Lambe",
-  artista: "Jão",
-  arquivo: "/melambe.mp3",
-  frase:
-    "Então pode me lamber, Me enrolar, me apertar, Pode me acender.",
-  icone: "⟡",
-  cor: "from-pink-300/20 to-fuchsia-400/10",
-},
-
-{
-  nome: "Eu Te Amo",
-  artista: "Lagum",
-  arquivo: "/euteamo.mp3",
-  frase:
-    "Você diz que me ama e eu te odeio, De um jeito esquisito, Porque nada é mais estranho que amar",
-  icone: "♥",
-  cor: "from-rose-200/20 to-red-300/10",
-},
-
-{
-  nome: "Fingi Na Hora De Rir",
-  artista: "Los Hermanos",
-  arquivo: "/finginahoraderir.mp3",
-  frase:
-    "Pois eu, eu só penso em você, Já não sei mais por que, Em ti eu consigo encontrar um caminho, um motivo, um lugar pra eu poder repousar meu amor",
-  icone: "✩",
-  cor: "from-slate-300/20 to-gray-500/10",
-},
-
-{
-  nome: "Retrato Para Iaiá",
-  artista: "Los Hermanos",
-  arquivo: "/iaia.mp3",
-  frase:
-    "Deixa ser como será, Eu vou sem me preocupar e crer pra ver o quanto eu posso adivinhar",
-  icone: "✎",
-  cor: "from-amber-100/20 to-yellow-300/10",
-},
-
-{
-  nome: "Sentimental",
-  artista: "Los Hermanos",
-  arquivo: "/sentimental.mp3",
-  frase:
-    "Eu só aceito a condição de ter você só pra mim, eu sei, não é assim, mas deixa eu fingir e rir",
-  icone: "☾",
-  cor: "from-slate-400/20 to-zinc-500/10",
-},
-
-{
-  nome: "Último Romance",
-  artista: "Los Hermanos",
-  arquivo: "/ultimoromance.mp3",
-  frase:
-    "E até quem me vê lendo o jornal na fila do pão, sabe que eu te encontrei",
-  icone: "☆",
-  cor: "from-yellow-200/20 to-orange-300/10",
-},
-
-{
-  nome: "Interestelar",
-  artista: "Mulamba",
-  arquivo: "/mulamba.mp3",
-  frase:
-    "Interestelar é codinome que eu vou te dar, caso eu resolva lhe dedicar uma canção",
-  icone: "✷",
-  cor: "from-violet-300/20 to-fuchsia-400/10",
-},
-
-{
-  nome: "Pensando Em Ti",
-  artista: "Nelson Gonçalves",
-  arquivo: "/pensandoemti.mp3",
-  frase:
-    "Nos cigarros que eu fumo te vejo nas espirais, Nos livros que eu tento ler, em cada frase tu estás",
-  icone: "☽",
-  cor: "from-blue-200/20 to-indigo-400/10",
-},
-
-{
-  nome: "Meu Amor",
-  artista: "O Grilo",
-  arquivo: "/meuamor.mp3",
-  frase:
-    "Meu Deus do céu se tu existe, eu rezo, eu pago, eu me alisto, eu sei lá",
-  icone: "♡",
-  cor: "from-rose-200/20 to-pink-300/10",
-},
-
-{
-  nome: "Pelo Gosto Que As Notas Deixam Na Boca",
-  artista: "O Grilo",
-  arquivo: "/pelogostoqueasnotasdeixamnaboca.mp3",
-  frase:
-    "Do castanho dos seus olhos, a castanha do caju, vou te levar onde o sonho faz brotar",
-  icone: "♪",
-  cor: "from-emerald-200/20 to-teal-400/10",
-},
-
-{
-  nome: "Pra Você Gostar De Mim",
-  artista: "O Grilo",
-  arquivo: "/pravocegostardemim.mp3",
-  frase:
-    "Quando você tá perto, eu não sei ser discreto, peito aberto, eu começo a cantar aquele",
-  icone: "✺",
-  cor: "from-pink-200/20 to-rose-300/10",
-},
-
-{
-  nome: "Serenata Existencialista",
-  artista: "O Grilo",
-  arquivo: "/serenataexistencialista.mp3",
-  frase:
-    "Porque se a gente se conheceu, Não foi obra do destino, nem desejo de Deus, Até porque esse cara aí já morreu",
-  icone: "✴",
-  cor: "from-emerald-300/20 to-green-400/10",
-},
-
-{
-  nome: "Sombra No Sol",
-  artista: "O Grilo",
-  arquivo: "/sombranosol.mp3",
-  frase:
-    "Eu hei de ser no teu lençol, O amanhecer, Brilhar a ponto de fazer, Uma sombra no Sol",
-  icone: "☀",
-  cor: "from-yellow-100/20 to-amber-200/10",
-},
-
-{
-  nome: "1932",
-  artista: "Pullovers",
-  arquivo: "/pullovers.mp3",
-  frase:
-    "Quando você sorriu, Me repartiu em antes e depois, Hoje eu me rendo, Rio, Mil novecentos e trinta e dois",
-  icone: "⊹",
-  cor: "from-stone-200/20 to-neutral-400/10",
-},
-
-{
-  nome: "Todas As Canções São De Amor",
-  artista: "Pullovers",
-  arquivo: "/todasascancoessaodeamor.mp3",
-  frase:
-    "Chuva, Sol, frio ou calor, Tudo se iguala, Virando fundo pro amor e eu me lembrando de você",
-  icone: "♫",
-  cor: "from-red-100/20 to-pink-200/10",
-},
-
-{
-  nome: "Enquanto Eu Passar Na Sua Rua",
-  artista: "Selvagens À Procura De Lei",
-  arquivo: "/enquantoeupassarnasuarua.mp3",
-  frase:
-    "Eu gostei dos corais da sua praia, Colei os dedos na sua sandália, Entrei no seu deserto de concreto, Concreto do Saara",
-  icone: "➶",
-  cor: "from-lime-200/20 to-green-400/10",
-},
-
-{
-  nome: "Gostar Só Dela",
-  artista: "Selvagens À Procura De Lei",
-  arquivo: "/gostarsodela.mp3",
-  frase:
-    "Não há motivos pra fugir, Se com ela eu sou mais eu, Se ela tem razão quando me diz, Só dela, Diz pra eu gostar somente só dela",
-  icone: "❋",
-  cor: "from-rose-300/20 to-red-400/10",
 },
 
 {
@@ -271,52 +72,12 @@ export default function PlaylistPage() {
 },
 
 {
-  nome: "BB (Garupa De Moto Amarela)",
-  artista: "Tim Bernardes",
-  arquivo: "/bebe.mp3",
-  frase:
-    "Você muda tudo e tudo fica tão bem, Mil cores, melhores amigos, Nós não vamos mais ser tão sozinhos, bebê, Conto com você, pode contar comigo",
-  icone: "➳",
-  cor: "from-yellow-100/20 to-orange-200/10",
-},
-
-{
-  nome: "Só Nós Dois",
-  artista: "Tim Bernardes",
-  arquivo: "/timbernardes.mp3",
-  frase:
-    "Ninguém te imaginaria, Ninguém sonharia, Alguém como você, Se hoje a realidade, É bem maior que o sonho, Eu já sei porque",
-  icone: "∞",
-  cor: "from-pink-200/20 to-purple-300/10",
-},
-
-{
-  nome: "Ciúmes",
-  artista: "Venere Vai Vênus",
-  arquivo: "/ciume.mp3",
-  frase:
-    "Eu sinto ciúmes, mesmo que eu não possa te mudar, E dói demais, queima minha pele e não é bonito, eu choro, eu grito",
-  icone: "✦",
-  cor: "from-fuchsia-200/20 to-rose-300/10",
-},
-
-{
-  nome: "A Vida Tem Dessas Coisas",
-  artista: "Ritchie",
-  arquivo: "/avidatemdessascoisas.mp3",
-  frase:
-    "Me perdi no teu caminho, Me encontrei falando sozinho, Sigo sempre sem destino, Pra te encontrar",
-  icone: "☾",
-  cor: "from-indigo-200/20 to-violet-300/10",
-},
-
-{
   nome: "Anjos",
   artista: "Venere Vai Vênus",
   arquivo: "/anjos.mp3",
   frase:
     "E eu nunca te beijei, rezei e desejei, Te segurar, Sinto como os anjos que te ensinaram o canto, E o amor, oh-oh",
-  icone: "✦",
+  icone: "ᨳଓ",
   cor: "from-sky-200/20 to-cyan-300/10",
 },
 
@@ -341,13 +102,83 @@ export default function PlaylistPage() {
 },
 
 {
+  nome: "BB (Garupa De Moto Amarela)",
+  artista: "Tim Bernardes",
+  arquivo: "/bebe.mp3",
+  frase:
+    "Você muda tudo e tudo fica tão bem, Mil cores, melhores amigos, Nós não vamos mais ser tão sozinhos, bebê, Conto com você, pode contar comigo",
+  icone: "🜸",
+  cor: "from-yellow-100/20 to-orange-200/10",
+},
+
+{
+  nome: "Can't Help Falling in Love",
+  artista: "Elvis Presley",
+  arquivo: "/canthelpfallinginlove.mp3",
+  frase:
+    "Shall I stay? Would it be a sin? If I can't help falling in love with you",
+  icone: "♡",
+  cor: "from-purple-200/20 to-pink-300/10",
+},
+
+{
+  nome: "Carinhoso",
+  artista: "Marisa Monte",
+  arquivo: "/carinhoso.mp3",
+  frase:
+    "Meu coração, não sei por quê, Bate feliz quando te vê, E os meus olhos ficam sorrindo",
+  icone: "☔︎︎",
+  cor: "from-emerald-200/20 to-teal-300/10",
+},
+
+{
+  nome: "Ciúmes",
+  artista: "Venere Vai Vênus",
+  arquivo: "/ciume.mp3",
+  frase:
+    "Eu sinto ciúmes, mesmo que eu não possa te mudar, E dói demais, queima minha pele e não é bonito, eu choro, eu grito",
+  icone: "ᯓ★",
+  cor: "from-fuchsia-200/20 to-rose-300/10",
+},
+
+{
+  nome: "Dueto",
+  artista: "Chico Buarque, Clara Buarque",
+  arquivo: "/dueto.mp3",
+  frase:
+    "Danem-se os astros (os autos), os signos (os dogmas), Os búzios (as bulas), anúncios (tratados), Ciganas (projetos), profetas (sinopses), Espelhos (conselhos), Se dane o evangelho e todos os orixás, Serás o meu amor, Serás, amor, a minha paz",
+  icone: "𝄂𝄚𝅦𝄚𝄞",
+  cor: "from-orange-200/20 to-yellow-300/10",
+},
+
+{
+  nome: "E o meu peito mais aberto que o mar da Bahia",
+  artista: "Vanguart",
+  arquivo: "/eomeupeitomaisabertoqueomardabahia.mp3",
+  frase:
+    "Ah, ah, ah, quem diria que seria, Tão bonito assim viver, Tão bonito assim olhar alguém, E não sentir medo, E não sentir frio, Não sentir vontade que não seja de infinito",
+  icone: " 𓆝 ",
+  cor: "from-sky-200/20 to-cyan-400/10",
+},
+
+{
   nome: "Enchanted",
   artista: "Taylor Swift",
   arquivo: "/enchanted.mp3",
   frase:
     "Please, don't be in love with someone else, Please, don't have somebody waiting on you",
-  icone: "✧",
+  icone: "⚡︎",
   cor: "from-purple-200/20 to-pink-300/10",
+},
+
+{
+  nome: "Enquanto Eu Passar Na Sua Rua",
+  artista: "Selvagens À Procura De Lei",
+  arquivo: "/enquantoeupassarnasuarua.mp3",
+  frase:
+    "Eu gostei dos corais da sua praia, Colei os dedos na sua sandália, Entrei no seu deserto de concreto, Concreto do Saara",
+  icone: "➶",
+  cor: "from-lime-200/20 to-green-400/10",
 },
 
 {
@@ -356,7 +187,7 @@ export default function PlaylistPage() {
   arquivo: "/entrenosdois.mp3",
   frase:
     "Não tem como esconder meu desejo (de te ter de novo), Tente ver em meus olhos o que sinto (vai além das palavras), Preciso te dizer",
-  icone: "♡",
+  icone: "𖨆♡𖨆",
   cor: "from-blue-200/20 to-indigo-300/10",
 },
 
@@ -366,8 +197,48 @@ export default function PlaylistPage() {
   arquivo: "/entupirdeborboletas.mp3",
   frase:
     "Eu fico inerte, pois tu me aquece, Eu quero alguma coisa, Que diminua a distância entre eu e você",
-  icone: "🦋",
+  icone: "𐦍",
   cor: "from-emerald-200/20 to-teal-300/10",
+},
+
+{
+  nome: "Eu Te Amo",
+  artista: "Lagum",
+  arquivo: "/euteamo.mp3",
+  frase:
+    "Você diz que me ama e eu te odeio, De um jeito esquisito, Porque nada é mais estranho que amar",
+  icone: "♥",
+  cor: "from-rose-200/20 to-red-300/10",
+},
+
+{
+  nome: "Fascinação",
+  artista: "Elis Regina",
+  arquivo: "/fascinacao.mp3",
+  frase:
+    "Os sonhos mais lindos sonhei, De quimeras mil, um castelo ergui",
+  icone: "✎ᝰ.",
+  cor: "from-orange-200/20 to-yellow-300/10",
+},
+
+{
+  nome: "Fingi Na Hora Rir",
+  artista: "Los Hermanos",
+  arquivo: "/finginahoraderir.mp3",
+  frase:
+    "Pois eu, eu só penso em você, Já não sei mais por que, Em ti eu consigo encontrar um caminho, um motivo, um lugar pra eu poder repousar meu amor",
+  icone: "𓁇𓁋",
+  cor: "from-slate-300/20 to-gray-500/10",
+},
+
+{
+  nome: "Gostar Só Dela",
+  artista: "Selvagens À Procura De Lei",
+  arquivo: "/gostarsodela.mp3",
+  frase:
+    "Não há motivos pra fugir, Se com ela eu sou mais eu, Se ela tem razão quando me diz, Só dela, Diz pra eu gostar somente só dela",
+  icone: "𑣲𝓔",
+  cor: "from-rose-300/20 to-red-400/10",
 },
 
 {
@@ -381,13 +252,93 @@ export default function PlaylistPage() {
 },
 
 {
+  nome: "Interestelar",
+  artista: "Mulamba",
+  arquivo: "/mulamba.mp3",
+  frase:
+    "Interestelar é codinome que eu vou te dar, caso eu resolva lhe dedicar uma canção",
+  icone: "𝄞₊˚⊹",
+  cor: "from-violet-300/20 to-fuchsia-400/10",
+},
+
+{
+  nome: "Kiss me",
+  artista: "Sixpence None the Richer",
+  arquivo: "/kissme.mp3",
+  frase:
+    "Kiss me, beneath the milky twilight, Lead me out on the moonlit floor, Lift your open hand",
+  icone: "☾",
+  cor: "from-fuchsia-200/20 to-pink-300/10",
+},
+
+{
+  nome: "Lábia",
+  artista: "Jão",
+  arquivo: "/labia.mp3",
+  frase:
+    "A gente tem um charme especial, Todo mundo quer parar pra ver, Cada festa, cada praia, Os rolês na madrugada a alma sempre sou eu e você",
+  icone: "✶",
+  cor: "from-red-200/20 to-rose-400/10",
+},
+
+{
+  nome: "Linha Do Equador",
+  artista: "Djavan",
+  arquivo: "/linhadoequador.mp3",
+  frase:
+    "Esse imenso, desmedido amor, vai além de seja o que for vai além de onde eu vou, do que sou, minha dor, minha linha do Equador.",
+  icone: "∿",
+  cor: "from-cyan-200/20 to-blue-400/10",
+},
+
+{
+  nome: "Lilás",
+  artista: "Djavan",
+  arquivo: "/lilas.mp3",
+  frase:
+    "Raio se libertou, clareou muito mais, Se encantou pela cor lilás, Prata na luz do amor, Céu azul!",
+  icone: "❀",
+  cor: "from-purple-200/20 to-pink-300/10",
+},
+
+{
   nome: "Line Without a Hook",
   artista: "Ricky Montgomery",
   arquivo: "/linewithoutahook.mp3",
   frase:
     "If I went and hurt my body, baby, Would you love me the same?",
-  icone: "⚘",
+  icone: "𓂅",
   cor: "from-stone-200/20 to-zinc-300/10",
+},
+
+{
+  nome: "Me Lambe",
+  artista: "Jão",
+  arquivo: "/melambe.mp3",
+  frase:
+    "Então pode me lamber, Me enrolar, me apertar, Pode me acender.",
+  icone: "𓆰𓆪",
+  cor: "from-pink-300/20 to-fuchsia-400/10",
+},
+
+{
+  nome: "Meu Amor",
+  artista: "O Grilo",
+  arquivo: "/meuamor.mp3",
+  frase:
+    "Meu Deus do céu se tu existe, eu rezo, eu pago, eu me alisto, eu sei lá",
+  icone: "♡",
+  cor: "from-rose-200/20 to-pink-300/10",
+},
+
+{
+  nome: "Oceano",
+  artista: "Djavan",
+  arquivo: "/oceano.mp3",
+  frase:
+    "Amar é um deserto e seus temores, Vida que vai na sela dessas dores, Não sabe voltar, me dá teu calor",
+  icone: "༄",
+  cor: "from-sky-200/20 to-cyan-400/10",
 },
 
 {
@@ -406,28 +357,8 @@ export default function PlaylistPage() {
   arquivo: "/outrolugar.mp3",
   frase:
     "Não te quero assim tão longe, Tanto quanto o céu do mar, Quero ter você mais perto, Certo, pronto pra te amar",
-  icone: "☄",
+  icone: "⌯✈︎",
   cor: "from-slate-200/20 to-gray-300/10",
-},
-
-{
-  nome: "Quando o Sol Se For",
-  artista: "Detonautas",
-  arquivo: "/detonautas.mp3",
-  frase:
-    "Quando o Sol se for, A luz indicará você pra mim",
-  icone: "☀",
-  cor: "from-orange-200/20 to-yellow-300/10",
-},
-
-{
-  nome: "Sparks Fly",
-  artista: "Taylor Swift",
-  arquivo: "/sparksfly.mp3",
-  frase:
-    "Drop everything now, meet me in the pouring rain, kiss me on the sidewalk, take away thhe pain",
-  icone: "⚡",
-  cor: "from-pink-200/20 to-purple-300/10",
 },
 
 {
@@ -436,38 +367,128 @@ export default function PlaylistPage() {
   arquivo: "/passarela.mp3",
   frase:
     "E eu vou esperar, Quanto for preciso, Pra te perguntar, Se tu quer dar outro, Rolê comigo",
-  icone: "∞",
+  icone: "℘",
   cor: "from-orange-200/20 to-yellow-300/10",
 },
 
 {
-  nome: "Carinhoso",
-  artista: "Marisa Monte",
-  arquivo: "/carinhoso.mp3",
+  nome: "Pelo Gosto Que As Notas Deixam Na Boca",
+  artista: "O Grilo",
+  arquivo: "/pelogostoqueasnotasdeixamnaboca.mp3",
   frase:
-    "Meu coração, não sei por quê, Bate feliz quando te vê, E os meus olhos ficam sorrindo",
-  icone: "♡",
-  cor: "from-emerald-200/20 to-teal-300/10",
+    "Do castanho dos seus olhos, a castanha do caju, vou te levar onde o sonho faz brotar",
+  icone: "♪",
+  cor: "from-emerald-200/20 to-teal-400/10",
 },
 
 {
-  nome: "Kiss me",
-  artista: "Sixpence None the Richer",
-  arquivo: "/kissme.mp3",
+  nome: "Pensando Em Ti",
+  artista: "Nelson Gonçalves",
+  arquivo: "/pensandoemti.mp3",
   frase:
-    "Kiss me, beneath the milky twilight, Lead me out on the moonlit floor, Lift your open hand",
+    "Nos cigarros que eu fumo te vejo nas espirais, Nos livros que eu tento ler, em cada frase tu estás",
+  icone: "☕︎",
+  cor: "from-blue-200/20 to-indigo-400/10",
+},
+
+{
+  nome: "Pra Você Gostar De Mim",
+  artista: "O Grilo",
+  arquivo: "/pravocegostardemim.mp3",
+  frase:
+    "Quando você tá perto, eu não sei ser discreto, peito aberto, eu começo a cantar aquele",
+  icone: "✺",
+  cor: "from-pink-200/20 to-rose-300/10",
+},
+
+{
+  nome: "Quando o Sol Se For",
+  artista: "Detonautas",
+  arquivo: "/detonautas.mp3",
+  frase:
+    "Quando o Sol se for, A luz indicará você pra mim",
+  icone: "❂",
+  cor: "from-orange-200/20 to-yellow-300/10",
+},
+
+{
+  nome: "Retrato Para Iaiá",
+  artista: "Los Hermanos",
+  arquivo: "/iaia.mp3",
+  frase:
+    "Deixa ser como será, Eu vou sem me preocupar e crer pra ver o quanto eu posso adivinhar",
+  icone: "✎",
+  cor: "from-amber-100/20 to-yellow-300/10",
+},
+
+{
+  nome: "Se eu for, eu vou com você",
+  artista: "Fresno, NXzero",
+  arquivo: "/seeuforeuvoucomvoce.mp3",
+  frase:
+    "Não vou embora, pois não é hora de te perder, Eu nunca fui embora, só se for com você, (Se eu for, eu vou com você)",
+  icone: "➶",
+  cor: "from-lime-200/20 to-green-400/10",
+},
+
+ {
+  nome: "Se Tiver Que Ser Na Bala, Vai",
+  artista: "Vanguart",
+  arquivo: "vanguart.mp3",
+  frase:
+    "Não te opõe ao curso do rio, Prestidigitar a frustração, Tem dias que a vida é um ato de coragem.",
+  icone: "✧",
+  cor: "from-orange-200/20 to-amber-300/10",
+},
+
+{
+  nome: "Sentimental",
+  artista: "Los Hermanos",
+  arquivo: "/sentimental.mp3",
+  frase:
+    "Eu só aceito a condição de ter você só pra mim, eu sei, não é assim, mas deixa eu fingir e rir",
   icone: "☾",
-  cor: "from-fuchsia-200/20 to-pink-300/10",
+  cor: "from-slate-400/20 to-zinc-500/10",
 },
 
 {
-  nome: "Fascinação",
-  artista: "Elis Regina",
-  arquivo: "/fascinacao.mp3",
+  nome: "Serenata Existencialista",
+  artista: "O Grilo",
+  arquivo: "/serenataexistencialista.mp3",
   frase:
-    "Os sonhos mais lindos sonhei, De quimeras mil, um castelo ergui",
-  icone: "☼",
-  cor: "from-orange-200/20 to-yellow-300/10",
+    "Porque se a gente se conheceu, Não foi obra do destino, nem desejo de Deus, Até porque esse cara aí já morreu",
+  icone: "✴",
+  cor: "from-emerald-300/20 to-green-400/10",
+},
+
+{
+  nome: "Sombra No Sol",
+  artista: "O Grilo",
+  arquivo: "/sombranosol.mp3",
+  frase:
+    "Eu hei de ser no teu lençol, O amanhecer, Brilhar a ponto de fazer, Uma sombra no Sol",
+  icone: "☀",
+  cor: "from-yellow-100/20 to-amber-200/10",
+},
+
+{
+  nome: "Só Nós Dois",
+  artista: "Tim Bernardes",
+  arquivo: "/timbernardes.mp3",
+  frase:
+    "Ninguém te imaginaria, Ninguém sonharia, Alguém como você, Se hoje a realidade, É bem maior que o sonho, Eu já sei porque",
+  icone: "∞",
+  cor: "from-pink-200/20 to-purple-300/10",
+},
+
+{
+  nome: "Sparks Fly",
+  artista: "Taylor Swift",
+  arquivo: "/sparksfly.mp3",
+  frase:
+    "Drop everything now, meet me in the pouring rain, kiss me on the sidewalk, take away thhe pain",
+  icone: "*ੈ✩",
+  cor: "from-pink-200/20 to-purple-300/10",
 },
 
 {
@@ -476,18 +497,28 @@ export default function PlaylistPage() {
   arquivo: "/temamarisa.mp3",
   frase:
     "O que é que você tem? Conta pra mim, Não quero ver você triste assim, Não fique triste o mundo é bom, A felicidade até existe ",
-  icone: "❥",
+  icone: "⃝␥⋆",
   cor: "from-amber-200/20 to-orange-300/10",
 },
 
 {
-  nome: "Can't Help Falling in Love",
-  artista: "Elvis Presley",
-  arquivo: "/canthelpfallinginlove.mp3",
+  nome: "Todas As Canções São De Amor",
+  artista: "Pullovers",
+  arquivo: "/todasascancoessaodeamor.mp3",
   frase:
-    "Shall I stay? Would it be a sin? If I can't help falling in love with you",
-  icone: "✧",
-  cor: "from-purple-200/20 to-pink-300/10",
+    "Chuva, Sol, frio ou calor, Tudo se iguala, Virando fundo pro amor e eu me lembrando de você",
+  icone: "♫",
+  cor: "from-red-100/20 to-pink-200/10",
+},
+
+{
+  nome: "Último Romance",
+  artista: "Los Hermanos",
+  arquivo: "/ultimoromance.mp3",
+  frase:
+    "E até quem me vê lendo o jornal na fila do pão, sabe que eu te encontrei",
+  icone: "`♡´",
+  cor: "from-yellow-200/20 to-orange-300/10",
 },
 
   ];
