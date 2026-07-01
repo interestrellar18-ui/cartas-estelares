@@ -8,128 +8,107 @@ export default function Galeria() {
   // ✦ GALERIA
   const midias = [
 
-    {
+ {
       tipo: "video",
-      arquivo: "/30deabril.mp4",
-      legenda:
-        "-Eu errei uma nota,\n mas aqui meu passatempo.\n 30 de abril de 2026",
-      rotacao: "-rotate-1",
+      arquivo: "/meperdoa.mp4",
+      legenda: "Me perdoa.Eu só queria aprender a cuidar daquilo que meu universo inteiro reconhece como lar.\n30 de junho de 2026",
+      rotacao: "rotate-2",
     },
 
-    {
+       {
       tipo: "video",
-      arquivo: "/domquixote.mp4",
-      legenda:
-        "Por amor as causas perdidas\n 03 de maio de 2026",
-      rotacao: "-rotate-2",
-    },
-
-    {
-      tipo: "video",
-      arquivo: "/algoparecido.mp4",
-      legenda:
-        "Quando tocou a música que eu pedi.\n 03 de maio de 2026",
-      rotacao: "-rotate-2",
-    },
-
-    {
-      tipo: "video",
-      arquivo: "/asitwas.mp4",
-      legenda:
-        "Felipe, you're no good alone \n 03 de maio de 2026",
-      rotacao: "-rotate-2",
-    },
-
-    {
-      tipo: "imagem",
-      arquivo: "/cantandojunto.jpeg",
-      legenda: "Primeiro dueto\n 04 de maio de 2026",
-      rotacao: "rotate-1",
-    },
-
-    {
-      tipo: "imagem",
-      arquivo: "/coracao.jpg",
-      legenda: "Histologia do dia que te conheci\n 05 de maio de 2026",
+      arquivo: "/anotherdayofsun.mp4",
+      legenda: "Porque a manhã chega e é outro dia de Sol.\n28 de junho de 2026",
       rotacao: "rotate-1",
     },
 
     {
       tipo: "video",
-      arquivo: "/annajulia.mp4",
-      legenda:
-        "você leva sorrisos por onde passa.\n 06 de maio de 2026",
-      rotacao: "-rotate-1",
+      arquivo: "/rockwithyou.mp4",
+      legenda: "Tua voz é minha música favorita\n26 de junho de 2026",
+      rotacao: "rotate-2",
+    },
+
+        {
+      tipo: "video",
+      arquivo: "/beautiful.mp4",
+      legenda: "You deserve me\n26 de junho de 2026",
+      rotacao: "rotate-1",
     },
 
     {
-      tipo: "imagem",
-      arquivo: "/melao.jpg",
-      legenda: "O que vale é o momento\n 22 de maio de 2026",
+      tipo: "video",
+      arquivo: "/piano.mp4",
+      legenda: "um som de muitos passados e novos futuros\n25 de junho de 2026",
       rotacao: "rotate-2",
     },
 
     {
       tipo: "video",
-      arquivo: "/detonautas.mp4",
-      legenda:
-        "Quando o sol se for\n 23 de maio de 2026",
-      rotacao: "-rotate-1",
+      arquivo: "/elvis.mp4",
+      legenda: "Você é minha pessoa favorita.\n15 de junho de 2026",
+      rotacao: "rotate-1",
     },
 
+     {
+      tipo: "video",
+      arquivo: "/temadenaoquerovervocetriste.mp4",
+      legenda: "Sente o céu e esse é o luar, Que eu quero ver no teu olhar, Eu só queria ter você pra mim\n15 de junho de 2026",
+      rotacao: "rotate-1",
+    },
+
+    
     {
       tipo: "video",
-      arquivo: "/camila.mp4",
-      legenda:
-        "Camila, Camila \n 23 de maio de 2026",
-      rotacao: "-rotate-2",
+      arquivo: "/kissme.mp4",
+      legenda: "Me beije, Sob o crepúsculo enevoado, Me conduza, Pelo chão iluminado pela Lua\n15 de junho de 2026",
+      rotacao: "rotate-2",
     },
 
-    {
-      tipo: "video",
-      arquivo: "/carla.mp4",
-      legenda:
-        "Carla \n 23 de maio de 2026",
-      rotacao: "-rotate-1",
-    },
-
-    {
-      tipo: "video",
-      arquivo: "/passarodefogo.mp4",
-      legenda:
-        "um pedaço do tempo que\n eu quis guardar pra sempre\n 25 de maio de 2026",
-      rotacao: "-rotate-2",
-    },
-
+    
     {
       tipo: "imagem",
-      arquivo: "/tokverde.jpg",
-      legenda:
-        "Me levou na cafeteria\n porque eu estava triste \n 27 de maio de 2026",
+      arquivo: "/junho.jpeg",
+      legenda: "Datas antigas, lembranças passadas, dias novos, memórias renovadas\n12 de junho de 2026",
       rotacao: "rotate-1",
     },
 
     {
       tipo: "imagem",
-      arquivo: "/strelinhas.jpg",
-      legenda:
-        "as pequenas estrelas que nasceram entre nós ✦\n 27 de maio de 2026",
-      rotacao: "-rotate-1",
-    },
-
-    {
-      tipo: "imagem",
-      arquivo: "/usfoto1.jpg",
-      legenda:
-        "31 de maio de 2026\n Nossa primeira foto juntos.",
+      arquivo: "/almoso.jpeg",
+      legenda: "05 de junho de 2026",
       rotacao: "rotate-2",
     },
+    
+    {
+      tipo: "video",
+      arquivo: "/zeramalho.mp4",
+      legenda:
+        "neste dia meu sorriso era\n reconhecível até do espaço\n 05 de junho de 2026",
+      rotacao: "-rotate-2",
+    },
 
     {
       tipo: "imagem",
-      arquivo: "/feliz.jpg",
+      arquivo: "/nosdois.jpeg",
       legenda:
-        "Seu sorriso clareia o mais cinza dos dias\n01 de junho de 2026",
+        "e no fim de tudo, ainda era você\n 02 de junho de 2026",
+      rotacao: "rotate-1",
+    },
+
+     {
+      tipo: "imagem",
+      arquivo: "/sorriso.jpeg",
+      legenda:
+        "o teu sorriso muda a gravidade do mundo\n 02 de junho de 2026",
+      rotacao: "-rotate-2",
+    },
+    
+    {
+      tipo: "imagem",
+      arquivo: "/nos1.jpeg",
+      legenda:
+        "nós dois existindo no mesmo universo\n 02 de junho de 2026",
       rotacao: "rotate-1",
     },
 
@@ -143,93 +122,129 @@ export default function Galeria() {
 
     {
       tipo: "imagem",
-      arquivo: "/nos1.jpeg",
+      arquivo: "/feliz.jpg",
       legenda:
-        "nós dois existindo no mesmo universo\n 02 de junho de 2026",
+        "Seu sorriso clareia o mais cinza dos dias\n01 de junho de 2026",
       rotacao: "rotate-1",
     },
 
     {
       tipo: "imagem",
-      arquivo: "/sorriso.jpeg",
+      arquivo: "/usfoto1.jpg",
       legenda:
-        "o teu sorriso muda a gravidade do mundo\n 02 de junho de 2026",
+        "31 de maio de 2026\n Nossa primeira foto juntos.",
+      rotacao: "rotate-2",
+    },
+
+    {
+      tipo: "imagem",
+      arquivo: "/strelinhas.jpg",
+      legenda:
+        "as pequenas estrelas que nasceram entre nós ✦\n 27 de maio de 2026",
+      rotacao: "-rotate-1",
+    },
+    
+    {
+      tipo: "imagem",
+      arquivo: "/tokverde.jpg",
+      legenda:
+        "Me levou na cafeteria\n porque eu estava triste \n 27 de maio de 2026",
+      rotacao: "rotate-1",
+    },
+
+    {
+      tipo: "video",
+      arquivo: "/passarodefogo.mp4",
+      legenda:
+        "um pedaço do tempo que\n eu quis guardar pra sempre\n 25 de maio de 2026",
+      rotacao: "-rotate-2",
+    },
+    
+    {
+      tipo: "video",
+      arquivo: "/carla.mp4",
+      legenda:
+        "Carla \n 23 de maio de 2026",
+      rotacao: "-rotate-1",
+    },
+
+    {
+      tipo: "video",
+      arquivo: "/camila.mp4",
+      legenda:
+        "Camila, Camila \n 23 de maio de 2026",
+      rotacao: "-rotate-2",
+    },
+    
+    {
+      tipo: "video",
+      arquivo: "/detonautas.mp4",
+      legenda:
+        "Quando o sol se for\n 23 de maio de 2026",
+      rotacao: "-rotate-1",
+    },
+    
+    {
+      tipo: "imagem",
+      arquivo: "/melao.jpg",
+      legenda: "O que vale é o momento\n 22 de maio de 2026",
+      rotacao: "rotate-2",
+    },
+    
+    {
+      tipo: "video",
+      arquivo: "/annajulia.mp4",
+      legenda:
+        "você leva sorrisos por onde passa.\n 06 de maio de 2026",
+      rotacao: "-rotate-1",
+    },
+
+    {
+      tipo: "imagem",
+      arquivo: "/coracao.jpg",
+      legenda: "Histologia do dia que te conheci\n 05 de maio de 2026",
+      rotacao: "rotate-1",
+    },
+
+    {
+      tipo: "imagem",
+      arquivo: "/cantandojunto.jpeg",
+      legenda: "Primeiro dueto\n 04 de maio de 2026",
+      rotacao: "rotate-1",
+    },
+   
+    {
+      tipo: "video",
+      arquivo: "/asitwas.mp4",
+      legenda:
+        "Felipe, you're no good alone \n 03 de maio de 2026",
+      rotacao: "-rotate-2",
+    },
+
+    
+    {
+      tipo: "video",
+      arquivo: "/algoparecido.mp4",
+      legenda:
+        "Quando tocou a música que eu pedi.\n 03 de maio de 2026",
       rotacao: "-rotate-2",
     },
 
     {
-      tipo: "imagem",
-      arquivo: "/nosdois.jpeg",
-      legenda:
-        "e no fim de tudo, ainda era você\n 02 de junho de 2026",
-      rotacao: "rotate-1",
-    },
-
-    {
       tipo: "video",
-      arquivo: "/zeramalho.mp4",
+      arquivo: "/domquixote.mp4",
       legenda:
-        "neste dia meu sorriso era\n reconhecível até do espaço\n 05 de junho de 2026",
+        "Por amor as causas perdidas\n 03 de maio de 2026",
       rotacao: "-rotate-2",
     },
 
     {
-      tipo: "imagem",
-      arquivo: "/almoso.jpeg",
-      legenda: "05 de junho de 2026",
-      rotacao: "rotate-2",
-    },
-
-    {
-      tipo: "imagem",
-      arquivo: "/junho.jpeg",
-      legenda: "Datas antigas, lembranças passadas, dias novos, memórias renovadas\n12 de junho de 2026",
-      rotacao: "rotate-1",
-    },
-
-    {
       tipo: "video",
-      arquivo: "/kissme.mp4",
-      legenda: "Me beije, Sob o crepúsculo enevoado, Me conduza, Pelo chão iluminado pela Lua\n15 de junho de 2026",
-      rotacao: "rotate-2",
+      arquivo: "/30deabril.mp4",
+      legenda:
+        "-Eu errei uma nota,\n mas aqui meu passatempo.\n 30 de abril de 2026",
+      rotacao: "-rotate-1",
     },
-
-    {
-      tipo: "video",
-      arquivo: "/temadenaoquerovervocetriste.mp4",
-      legenda: "Sente o céu e esse é o luar, Que eu quero ver no teu olhar, Eu só queria ter você pra mim\n15 de junho de 2026",
-      rotacao: "rotate-1",
-    },
-
-    {
-      tipo: "video",
-      arquivo: "/elvis.mp4",
-      legenda: "Você é minha pessoa favorita.\n15 de junho de 2026",
-      rotacao: "rotate-1",
-    },
-
-    {
-      tipo: "video",
-      arquivo: "/piano.mp4",
-      legenda: "um som de muitos passados e novos futuros\n25 de junho de 2026",
-      rotacao: "rotate-2",
-    },
-
-    {
-      tipo: "video",
-      arquivo: "/beautiful.mp4",
-      legenda: "You deserve me\n26 de junho de 2026",
-      rotacao: "rotate-1",
-    },
-
-    {
-      tipo: "video",
-      arquivo: "/rockwithyou.mp4",
-      legenda: "Tua voz é minha música favorita\n26 de junho de 2026",
-      rotacao: "rotate-2",
-    },
-
-
 
 
   ];
