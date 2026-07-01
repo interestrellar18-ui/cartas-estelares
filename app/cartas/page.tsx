@@ -138,6 +138,10 @@ export default function cartas() {
   previa: "Há olhares que atravessam a alma, presenças que o tempo não consegue apagar. Entre certezas e confusões, existe um sentimento que não sabe explicar…apenas sente.",
 },
 
+  {
+  titulo: "Antes de eu transbordar",
+  previa: "Eu guardo uma palavra no peito, não por medo de senti-la, mas por medo de colocá-la como peso nas suas mãos.",
+},
   ];
 
   // POSIÇÕES DAS ESTRELAS
@@ -157,7 +161,9 @@ export default function cartas() {
 
     { top: "24%", left: "42%" },
 
-         { top: "47%", left: "78%" },
+   { top: "47%", left: "78%" },
+
+    { top: "30%", left: "32%" },
 
 
   ];

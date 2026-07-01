@@ -213,6 +213,26 @@ foto2: "/nosdois.jpeg",
   foto2: "",
 },
 
+{
+  titulo: "Antes de eu transbordar",
+  destinatario: "Felipe",
+
+  musica: "Carinhoso",
+  artista: "Marisa Monte",
+
+  arquivoMusica: "/carinhoso.mp3",
+
+  texto:
+"24/07/2026\n\n eu estava planejando te falar\n\n\n Eu tenho uma palavra guardada no peito,\n uma palavra pequena na forma,\n mas imensa no significado.\n\n Ela mora na ponta da minha língua,\n mas eu seguro um pouco mais,\n não porque ela seja menos verdadeira,\n mas porque eu sei o tamanho que ela carrega.\n\n Eu tenho medo de entregar meu amor\n como quem entrega uma tempestade,\n quando tudo que eu quero ser\n é uma chuva tranquila depois de um dia difícil.\n\n Eu não quero ser mais uma responsabilidade,\n mais uma promessa para você cumprir,\n mais um peso colocado sobre os ombros\n de alguém que já carregou tanto.\n\n Eu não quero que você me ame\n porque eu declamei amor.\n\n Eu quero que você me escolha\n porque, ao meu lado,\n o seu coração encontra descanso.\n\n Porque eu quero consertar suas feridas,\n eu não quero ser a cura das suas dores.\n Eu só quero sentar ao seu lado e cuidar de ti\n enquanto você aprende a cuidar de si.\n\n Quero ser a mão que segura a sua,\n a mão que te ajuda juntar seus pedaços.\n\n Eu sei que você tem histórias antes de mim,\n amores que deixaram marcas,\n caminhos que terminaram diferente do que você sonhou.\n\n E eu não quero apagar nada disso.\n\n Eu respeito quem você foi,\n porque foi essa pessoa que chegou até mim.\n Mas eu espero, com carinho,\n que exista espaço para quem você está se tornando.\n\n Porque eu não quero ser um capítulo para esquecer,\n nem uma pausa bonita entre duas histórias.\n\n Eu quero ser o presente que você escolhe viver.\n\n E se um dia essa palavra escapar dos meus lábios,\n se um dia eu conseguir dizer “eu te amo”,\n eu quero que ela chegue até você leve.\n\n Como uma flor, não como uma dívida.\n Como um abraço, não como uma cobrança.\n\n Porque amar você, para mim,\n nunca foi sobre prender.\n\n É sobre olhar para você\n e pensar:\n\n “Eu espero que você seja feliz.\n E se puder ser comigo,\n eu vou agradecer todos os dias.” e eu não quero que você seja perfeito,\n nem que esconda as marcas dos dias difíceis.\n Eu gosto de você inteiro:\n com os pedaços que você mostra\n e até com aqueles que ainda está tentando juntar.\n\n Porque eu vi em você uma coisa rara:\n alguém que, mesmo cansado,\n mesmo carregando tempestades dentro do peito,\n ainda encontra um jeito de ser abrigo.\n\n E talvez você nem perceba, Felipe,\n mas você virou um daqueles lugares\n onde o coração descansa.\n Você me faz querer permanecer\n até nos dias em que eu penso em ir embora,\n porque a sua presença transforma caminhos difíceis\n em lugares que eu consigo atravessar.\n\n Eu quero te dar minha melhor versão,\n não porque a versão de agora não seja suficiente,\n mas porque alguém que cuida tanto de mim\n merece receber todo o amor que eu tenho para oferecer.\n\n Quero aprender a ser casa para você\n como você, mesmo sem perceber,\n tem sido lar para mim.\n\n E eu sei que você diz que está quebrado,\n mas eu vejo diferente:\n eu vejo alguém se reconstruindo.\n Vejo alguém que todos os dias recolhe seus pedaços\n e tenta, mesmo com medo,\n ser alguém capaz de ficar.\n\n E talvez seja isso que mais me encanta:\n você não promete ser alguém sem cicatrizes,\n você promete continuar tentando.\n\n Eu não quero uma versão perfeita sua.\n Eu quero essa versão que luta,\n que sente,\n que se importa,\n que segura minha mão mesmo enquanto aprende a segurar a própria.\n\n Porque, no meio de tanta coisa incerta,\n existe uma certeza silenciosa em mim:\n\n você se tornou minha pessoa favorita.\n\n E se amar também é escolher,\n eu escolho caminhar ao seu lado enquanto você se encontra,\n enquanto eu me encontro,\n enquanto nós aprendemos, devagarinho,\n a ser o melhor lugar um para o outro.",
+  frase:
+    "Daqui eu já consigo imaginar, Que essa é a nossa história, Tudo tem a sua hora, EU SEI QUE AS COISAS BOAS VÃO CHEGAR SE EU ESPERAR.",
+  selo1: "𖹭",
+  selo2: "",
+
+  foto1: "",
+  foto2: "/junho.jpeg",
+},
+
 ];
 
   const carta = cartas[Number(params.id)];
