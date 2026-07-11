@@ -233,6 +233,27 @@ foto2: "/nosdois.jpeg",
   foto2: "/junho.jpeg",
 },
 
+{
+  titulo: "Demais",
+  destinatario: "Felipe",
+
+  musica: "Hiperbole",
+  artista: "Sofi Frozza",
+
+  arquivoMusica: "/exagero.mp3",
+
+  texto:
+    "Tenho medo de amar alto demais.\n\nDe encher teu celular de palavras,\nde fazer do meu carinho\num barulho maior do que o teu silêncio consegue abraçar.\n\nTenho medo de que minhas declarações\ncheguem até você\ncomo quem pede mais do que deveria.\n\nMas a verdade...\n\né que eu não sei te gostar pela metade.\n\nVocê me aconteceu\ne, desde então,\nmeu coração desaprendeu a economizar afeto.\n\nEu penso em você\ncomo quem lembra de respirar,\ncomo quem procura o céu\nsem perceber que levantou os olhos.\n\nE, ainda assim,\no meu maior desejo\nnão é que você carregue esse amor.\n\nÉ que ele seja leve.\n\nLeve como o teu\n'tá tudo bem',\nque sempre encontra meu medo\nantes mesmo de mim.\n\nLeve como quando você diz\nque gosta do meu jeito,\nenquanto eu ainda tento pedir desculpas\npor ser exatamente quem sou.\n\nTalvez eu nunca deixe de ter medo\nde ser intensa demais.\n\nMas, se existe uma coragem\nque o meu coração me deu,\né a de continuar escolhendo você\nmesmo tremendo.\n\nPorque eu não quero ser\na tempestade da tua vida.\n\nQuero ser o lugar\nonde você volta para descansar.\n\nE, se um dia eu parecer demais,\n\nme lembra, mais uma vez,\n\nque sentir também pode ser leve.",
+  frase:
+    "Se existem infinitos universos, em cada um deles eu ainda escolheria ficar. Não existe nenhum onde desistir de você faça sentido.",
+  selo1: "𖦹",
+  selo2: "𖹭",
+
+  foto1: "",
+  foto2: "",
+
+},
+
 ];
 
   const carta = cartas[Number(params.id)];

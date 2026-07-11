@@ -142,6 +142,13 @@ export default function cartas() {
   titulo: "Antes de eu transbordar",
   previa: "Eu guardo uma palavra no peito, não por medo de senti-la, mas por medo de colocá-la como peso nas suas mãos.",
 },
+
+
+    {
+      titulo: "Demais",
+      previa:
+        "Eu me apaixonei do mesmo jeito que alguém cai no sono: Gradativamente, de repente, de uma hora pra outra.",
+    },
   ];
 
   // POSIÇÕES DAS ESTRELAS
@@ -164,6 +171,8 @@ export default function cartas() {
    { top: "47%", left: "78%" },
 
     { top: "30%", left: "32%" },
+
+    { top: "58%", left: "63%" },
 
 
   ];
