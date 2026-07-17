@@ -21,6 +21,16 @@ export default function PlaylistPage() {
 
  const playlist = [
  
+{
+  nome: "Sentimentos",
+  artista: "Felipe Alves",
+  arquivo: "/sentimentos.mp3",
+  frase:
+    "Eu vou reconquistar o direito de amar, deixar a vida levar até que eu disponha de clareza no olhar.",
+  icone: "✮",
+  cor: "from-orange-200/20 to-yellow-300/10",
+},
+
  {
   nome: "1932",
   artista: "Pullovers",
