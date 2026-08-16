@@ -149,6 +149,13 @@ export default function cartas() {
       previa:
         "Eu me apaixonei do mesmo jeito que alguém cai no sono: Gradativamente, de repente, de uma hora pra outra.",
     },
+
+     {
+      titulo: "Música inominável",
+      previa:
+        "Não tem prévia...eu só tento te fazer feliz.",
+    },
+
   ];
 
   // POSIÇÕES DAS ESTRELAS
@@ -173,6 +180,8 @@ export default function cartas() {
     { top: "30%", left: "32%" },
 
     { top: "58%", left: "63%" },
+
+    { top: "72%", left: "28%" },
 
 
   ];

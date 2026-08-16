@@ -254,6 +254,27 @@ foto2: "/nosdois.jpeg",
 
 },
 
+{
+  titulo: "Música sem nome que eu fiz pra você",
+  destinatario: "Felipe Alves",
+
+  musica: "Sentimentos",
+  artista: "Felipe Alves",
+
+  arquivoMusica: "/sentimentos.mp3",
+
+  texto:
+    "Se viver é sofrer\nMe deixa chorar com você\nSe o peito apertar\nEu te cuido até não mais doer\n\nE Quando o mundo parecer\nGrande demais\nA gente o enfrenta sem olhar para trás\n\nQuando tudo isso passar\nVamos nos aventurar\nEu ainda acredito num amanhã\nQue as coisas boas irão vir\nSe eu esperar\nQue o mundo inteiro outra vez\nIrá brilhar\nE o teu sorriso vai\nMe incendiar\n\nCê' vai conquistar\nE vai parar de sangrar\nE quando chover\nAbrigo eu serei pra você\n\nE Quando o mundo parecer\nGrande demais\nA gente o enfrenta sem olhar para trás\n\nSe viver é aprender a sofrer\nEu ainda escolho ficar\nMesmo sem saber se amanhã\nVocê ainda irá me chamar\nVocê nunca foi promessa\nFoi decisão do coração\nEnquanto existir nós dois\nEu nunca vou soltar sua mão\n\nE Quando o mundo parecer\nGrande demais\nA gente o enfrenta sem olhar para trás\n\nQuando tudo isso passar\nVamos nos aventurar\nEu ainda acredito num amanhã\nQue as coisas boas irão vir\nSe eu esperar\nQue o mundo inteiro outra vez\nIrá brilhar\nE o teu sorriso vai\nMe incendiar.",
+  frase:
+    "e existissem palavras pra explicar teu rosto, elas ainda esqueceriam de contar o brilho dos teus detalhes.",
+  selo1: "𐙚",
+  selo2: "𖹭",
+
+  foto1: "",
+  foto2: "",
+},
+
+
 ];
 
   const carta = cartas[Number(params.id)];
