@@ -156,6 +156,18 @@ export default function cartas() {
         "Não tem prévia...eu só tento te fazer feliz.",
     },
 
+    
+     {
+      titulo: "Se meus olhos pudessem escrever.",
+      previa:
+        "se os olhos são a janela da alma, então a minha alma tenta brilhar pra você me enxergar.",
+    },
+
+      {
+      titulo: "A melhor eu.",
+      previa:
+        "...",
+    },
   ];
 
   // POSIÇÕES DAS ESTRELAS
@@ -183,6 +195,9 @@ export default function cartas() {
 
     { top: "72%", left: "28%" },
 
+    { top: "33%", left: "52%" },
+
+    { top: "62%", left: "15%" },
 
   ];
 

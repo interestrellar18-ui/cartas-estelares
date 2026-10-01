@@ -274,7 +274,45 @@ foto2: "/nosdois.jpeg",
   foto2: "",
 },
 
+{
+  titulo: "Se meus olhos pudessem escrever",
+  destinatario: "Felipe Alves",
 
+  musica: "3X4",
+  artista: "Engenheiros do Hawaii",
+
+  arquivoMusica: "/3x4.mp3",
+
+  texto:
+    "se meus olhos pudessem falar\ncontariam tudo sobre você\nse meu peito pudesse cantar\nele cantaria até amanhecer\n\nporque eu te quero nos dias bonitos\ne também quando o mundo pesar\nquero ser teu lugar de descanso\nquando você não souber onde ficar\n\nE quando a vida parecer\nGrande demais\nA gente respira e enfrenta\nSem olhar para trás\n\nQuando tudo isso passar\nVamos nos aventurar\nEu ainda acredito num amanhã\nQue vai nos encontrar\nE se o mundo outra vez\nResolver desabar\nEu seguro a tua mão\nAté ele se acalmar\n\nQuero estar nas tuas pequenas coisas\nNos teus planos de madrugada\nNas mensagens sem motivo algum\nNas risadas fora de hora\n\nQuero conhecer teus silêncios\ne os sonhos que você não contou\nQuero estar quando a noite for longa\ne lembrar você do quanto é amor\n\nE quando o medo chegar\nEu vou ficar\nMesmo que eu não saiba\nComo te salvar\n\nQuando tudo isso passar\nVamos nos aventurar\nEu ainda acredito num amanhã\nQue vai nos encontrar\nE se a vida outra vez\nResolver nos testar\nEu fico do teu lado\nAté a tempestade passar\n\nCê vai conquistar\nTudo que quiser alcançar\nE quando chover\nMeu abraço vai ser teu lugar\nQuando o céu escurecer\nE faltar direção\nEu vou te lembrar baixinho\nQue você nunca está só, não\n\nE se viver for aprender\neu quero aprender com você\nSe amar for também ter medo\neu ainda escolho permanecer\nPorque você nunca foi promessa\nNem acaso, nem distração\nFoi vontade, foi encontro\nFoi escolha do coração\n\nE quando o mundo parecer\nGrande demais\nA gente enfrenta junto\nSem olhar para trás\n\nQuando tudo isso passar\nVamos nos aventurar\nEu ainda acredito num amanhã\nQue vai nos encontrar\nE quando o mundo inteiro\nOutra vez se iluminar\nEu quero estar bem perto\nPra ver teu sorriso brilhar\n\nSe meus olhos pudessem falar\nTalvez dissessem sem hesitar:\neu te quero hoje\neu te quero amanhã\neu te quero quando o tempo mudar\n\nE se algum dia você esquecer\nDo quanto é capaz de vencer\nOlha pra mim e lembra:\neu ainda escolho você\nEnquanto existir nós dois\nEnquanto houver onde chegar\nEu nunca vou soltar tua mão\nE vou ficar pra te acompanhar.",
+  frase:
+    "Se é normalizado fumar sabendo que destói seus pulmões, o que ha de arrado em amar alguém mesmo sabendo que há mínimas chances.",
+  selo1: "𐙚",
+  selo2: "𖹭",
+
+  foto1: "",
+  foto2: "",
+},
+
+{
+  titulo: "A melhor eu.",
+  destinatario: "Felipe Alves",
+
+  musica: "E o meu peito mais aberto que o mar da Bahia.",
+  artista: "Vanguart",
+
+  arquivoMusica: "/eomeupeitomaisabertoqueomardabahia.mp3",
+
+  texto:
+    "eu reconheço o tanto que você faz por mim\nreconheço cada cuidado\ncada vez que você tem paciência comigo\ncada vez que você tenta me entender\nmesmo quando eu mesma torno tudo mais difícil\n\ne eu quero te pedir desculpa\n\ndesculpa pelas vezes em que eu choro por qualquer coisa\npelas vezes em que tudo parece maior do que realmente é\npelas vezes em que eu demoro pra ficar bem\ne acabo fazendo você lidar com coisas\nque eu sei que não são fáceis de lidar\n\neu sei que eu sou cansativa às vezes\nsei que eu dou trabalho\nsei que conviver com alguém que sente tudo tão intensamente\nnão deve ser simples\n\ne eu não quero usar isso como desculpa\neu quero mudar\n\nquero melhorar por mim\nmas também quero melhorar por você\n\nporque você merece a melhor versão de mim que eu conseguir construir\nmerece a melhor Êmilly que eu puder te dar\n\ne eu quero ser essa Êmilly\n\nnão uma Êmilly perfeita\nporque eu sei que nunca vou ser\nmas uma Êmilly que tenta mais\nque aprende\nque escuta\nque respira antes de transformar tudo em um problema\nque consegue olhar para as coisas com mais calma\ne que aprende a cuidar melhor de quem ama\n\nporque você me dá o melhor Felipe que eu poderia ter\no melhor Felipe que eu poderia querer\n\ne eu reconheço isso\n\nreconheço o homem que você é comigo\no carinho que você me dá\na paciência\no cuidado\na forma como você permanece\ne tudo aquilo que você faz\nmesmo nas coisas pequenas\n\ne eu não quero receber tudo isso\ne continuar sendo a mesma pessoa\n\neu quero que você olhe pra mim algum dia\ne perceba que todo o esforço valeu a pena\n\nquero que você veja em mim\na mesma vontade de cuidar\nque eu vejo em você\n\nentão me desculpa\n\npor todas as vezes que eu fui difícil\npor todas as vezes que eu deixei o medo falar mais alto\npor todas as vezes que uma coisa pequena virou uma coisa enorme\n\neu estou tentando\n\ne talvez eu ainda demore\ntalvez eu ainda erre\ntalvez eu ainda tenha dias ruins\n\nmas eu quero continuar tentando\n\nporque você merece isso\n\nvocê merece a melhor Êmilly que eu conseguir ser\n\ne eu quero ser ela\npor mim\npor você\ne por tudo que a gente ainda pode ser.",
+  frase:
+    "...",
+  selo1: "S2",
+  selo2: "𖹭",
+
+  foto1: "",
+  foto2: "",
+},
 ];
 
   const carta = cartas[Number(params.id)];
