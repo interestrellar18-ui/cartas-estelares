@@ -8,6 +8,76 @@ export default function Galeria() {
   // ✦ GALERIA
   const midias = [
 
+
+     {
+      tipo: "imagem",
+      arquivo: "/hands.jpeg",
+      legenda: "Se vai dar pé\nOu não vai dar jeito\nO tempo irá dizer\nSó sei que agora é forte, perfeito\nSou totalmente seu <3.\n30 de setembro de 2026",
+      rotacao: "rotate-1",
+    },
+
+    {
+      tipo: "video",
+      arquivo: "/27setem.mp4",
+      legenda: "27 de setembro de 2026",
+      rotacao: "rotate-1",
+    },
+{
+      tipo: "video",
+      arquivo: "/27sete.mp4",
+      legenda: "27 de setembro de 2026",
+      rotacao: "rotate-2",
+    },
+    
+{
+      tipo: "video",
+      arquivo: "/27set.mp4",
+      legenda: "27 de setembro de 2026",
+      rotacao: "rotate-1",
+    },
+
+
+    {
+      tipo: "imagem",
+      arquivo: "/lunch.jpg",
+      legenda: "Aumoso pós prova.\n16 de setembro de 2026",
+      rotacao: "rotate-2",
+    },
+{
+      tipo: "imagem",
+      arquivo: "/gym.jpg",
+      legenda: "GymDate.\n07 de setembro de 2026",
+      rotacao: "rotate-1",
+    },
+
+{
+      tipo: "video",
+      arquivo: "/poropaganda.mp4",
+      legenda: "A gente combina tanto.\n02 de setembro de 2026",
+      rotacao: "rotate-2",
+    },
+
+    {
+      tipo: "video",
+      arquivo: "/niver.mp4",
+      legenda: "Obrigada por não me deixar sozinha, você é minha pessoa favorita.\n18 de agosto de 2026",
+      rotacao: "rotate-1",
+    },
+
+     {
+      tipo: "video",
+      arquivo: "/15agosto.mp4",
+      legenda: "Saudades do som da sua voz.\n15 de agosto de 2026",
+      rotacao: "rotate-2",
+    },
+
+    {
+      tipo: "imagem",
+      arquivo: "/desenho.jpeg",
+      legenda: "Eu sinto árvores por você.\n11 de Julho de 2026",
+      rotacao: "rotate-1",
+    },
+
  {
       tipo: "video",
       arquivo: "/meperdoa.mp4",
