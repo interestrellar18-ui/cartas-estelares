@@ -168,6 +168,24 @@ export default function cartas() {
       previa:
         "...",
     },
+
+      {
+      titulo: "Sobre nós",
+      previa:
+        "...",
+    },
+
+      {
+      titulo: "Feliz Aniversário",
+      previa:
+        "...",
+    },
+
+      {
+      titulo: "É, dói.",
+      previa:
+        "...",
+    },
   ];
 
   // POSIÇÕES DAS ESTRELAS
@@ -198,6 +216,14 @@ export default function cartas() {
     { top: "33%", left: "52%" },
 
     { top: "62%", left: "15%" },
+
+    { top: "52%", left: "8%" },
+
+  { top: "68%", left: "12%" },
+  
+  { top: "88%", left: "18%" },
+
+
 
   ];
 

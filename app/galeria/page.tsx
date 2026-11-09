@@ -8,12 +8,67 @@ export default function Galeria() {
   // ✦ GALERIA
   const midias = [
 
+    {
+      tipo: "imagem",
+      arquivo: "/20novpraca.jpeg",
+      legenda: "Obrigada por não deixar morrer em mim a esperança de que um dia a gente ainda possa viver tudo aquilo que sonhamos. Eu não sei quanto tempo vai levar, nem quantas coisas precisaremos reconstruir, mas sei que, quando você estiver pronto, eu quero estar bem o suficiente para te encontrar de novo. Vou cuidar de mim, aprender, amadurecer e melhorar todos os dias. Não quero que você encontre a mesma pessoa que deixou para trás, quero que encontre alguém que, mesmo depois de tudo, nunca deixou de acreditar na beleza do que poderíamos viver. Estarei aqui, não esperando a vida passar, mas fazendo de mim alguém capaz de viver tudo isso novamente com você. 20 de outubro de 2026",
+      rotacao: "rotate-3",
+    },
+
+    {
+      tipo: "imagem",
+      arquivo: "/17show.jpeg",
+      legenda: "Queria que fosse o melhor aniversário. 17 de outubro de 2026",
+      rotacao: "rotate-1",
+    },
+
+    {
+      tipo: "video",
+      arquivo: "/17sorve.mp4",
+      legenda: "17 de outubro de 2026",
+      rotacao: "rotate-2",
+    },
+
+{
+      tipo: "imagem",
+      arquivo: "/17sorvete.jpeg",
+      legenda: "17 de outubro de 2026",
+      rotacao: "rotate-1",
+    },
+
+    {
+      tipo: "video",
+      arquivo: "/velhos.mp4",
+      legenda: "você é um encanto. 16 de outubro de 2026",
+      rotacao: "rotate-2",
+    },
+
+    {
+      tipo: "video",
+      arquivo: "/yousong.mp4",
+      legenda: "10 de outubro de 2026",
+      rotacao: "rotate-1",
+    },
+
+      {
+      tipo: "video",
+      arquivo: "/pramim.mp4",
+      legenda: "Eu não quero perder nada. 30 de setembro de 2026",
+      rotacao: "rotate-2",
+    },
+
+      {
+      tipo: "imagem",
+      arquivo: "/histoheart.jpeg",
+      legenda: "27 de setembro de 2026",
+      rotacao: "rotate-1",
+    },
 
      {
       tipo: "imagem",
       arquivo: "/hands.jpeg",
       legenda: "Se vai dar pé\nOu não vai dar jeito\nO tempo irá dizer\nSó sei que agora é forte, perfeito\nSou totalmente seu <3.\n30 de setembro de 2026",
-      rotacao: "rotate-1",
+      rotacao: "rotate-2",
     },
 
     {
