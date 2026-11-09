@@ -11,7 +11,7 @@ export default function Galeria() {
     {
       tipo: "imagem",
       arquivo: "/20novpraca.jpeg",
-      legenda: "Obrigada por não deixar morrer em mim a esperança de que um dia a gente ainda possa viver tudo aquilo que sonhamos. Eu não sei quanto tempo vai levar, nem quantas coisas precisaremos reconstruir, mas sei que, quando você estiver pronto, eu quero estar bem o suficiente para te encontrar de novo. Vou cuidar de mim, aprender, amadurecer e melhorar todos os dias. Não quero que você encontre a mesma pessoa que deixou para trás, quero que encontre alguém que, mesmo depois de tudo, nunca deixou de acreditar na beleza do que poderíamos viver. Estarei aqui, não esperando a vida passar, mas fazendo de mim alguém capaz de viver tudo isso novamente com você. 20 de outubro de 2026",
+      legenda: "Obrigada por não deixar morrer em mim a esperança de que um dia a gente ainda possa viver tudo isso outra vez. Eu não sei quanto tempo vai levar, nem quantas coisas precisaremos reconstruir, mas sei que, quando você estiver pronto, eu quero estar bem o suficiente para te encontrar de novo. Vou cuidar de mim, aprender, amadurecer e melhorar todos os dias. Não quero que você encontre a mesma pessoa que deixou para trás, quero que encontre alguém que, mesmo depois de tudo, nunca deixou de acreditar na beleza do que poderíamos viver. Estarei aqui, não esperando a vida passar, mas fazendo de mim alguém capaz de viver tudo isso novamente com você. 20 de outubro de 2026",
       rotacao: "rotate-3",
     },
 
