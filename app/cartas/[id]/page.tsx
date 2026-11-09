@@ -348,10 +348,10 @@ foto2: "/nosdois.jpeg",
   frase:
     "...",
   selo1: "S2",
-  selo2: "𖹭",
+  selo2: "",
 
   foto1: "",
-  foto2: "",
+  foto2: "/17show.jpeg",
 },
 
 {
@@ -368,10 +368,10 @@ foto2: "/nosdois.jpeg",
   frase:
     "...",
   selo1: "S2",
-  selo2: "𖹭",
+  selo2: "",
 
   foto1: "",
-  foto2: "",
+  foto2: "/20novpraca.jpeg",
 },
 
 ];
