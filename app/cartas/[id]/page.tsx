@@ -358,10 +358,10 @@ foto2: "/nosdois.jpeg",
   titulo: "É, dói.",
   destinatario: "Felipe Alves",
 
-  musica: "Exagero",
-  artista: "Sofia Frozza",
+  musica: "Sentimentos",
+  artista: "Felipe Alves",
 
-  arquivoMusica: "/linhadoequador.mp3",
+  arquivoMusica: "/sentimentos.mp3",
 
   texto:
     "Vamos cantar\nPara uma música que fizemos\nEnxugue suas lágrimas\nE seus medos\nEstarei aqui\n\nQuando as noites ficam muito solitárias\nQuando o céu ficar cinza\nEstá tudo bem,está tudo bem\napenas aguente dia após dia e verá\nNão é tão ruim quanto parece\nEu sei, os tempos podem ser difíceis\nAs ondas podem atingir altas e baixas. Pode ser difícil\nMas eu prometo que isso tudo vai passar em breve\nTudo vai ficar bem então\n\nVamos cantar\nPara uma música que fizemos\nEnxugue suas lágrimas\nE seus medos\nEstarei aqui",
