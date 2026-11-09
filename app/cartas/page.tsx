@@ -217,7 +217,7 @@ export default function cartas() {
 
     { top: "62%", left: "15%" },
 
-    { top: "52%", left: "8%" },
+    { top: "52%", left: "18%" },
 
   { top: "68%", left: "12%" },
   
